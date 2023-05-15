@@ -1,0 +1,45 @@
+We have to restrict our attention to a small part of the arXiv,
+such as the research interests of group members. Maybe 5-10 subject
+tags?
+
+We need to decide on a precise problem statement. This is the most
+pressing task right now.
+
+We could try to build a recommender that connects the user to 
+potentially interesting papers in other fields that they might not
+otherwise see (cross-disciplinary). Alternatively, we could attempt to
+cluster papers to find subfields and create new tags for more granular
+searches.
+
+Because of the accelerated timeline, we should always try to do
+less complicated ideas first, and then improve those if there's time.
+For example, let's stick only with the data that the API can pull,
+and not try to use something like the text of the papers. It is, 
+after all, likely that authors, abstract, and subject tags will be
+sufficient for a first recommender.
+
+Michael has spoken to Matt about some work he (Matt) has done on this.
+He suggested looking into Bayesian networks (?): representing the problem
+as nodes in a graph with weighted edges, and then trying to identify
+clusters.
+
+What Python packages do people use for NLP? Jee Uhn suggests a 
+singular value decomposition package within numpy.linalg,
+which you can use to do dimension reduction. This would be 
+after vectorizing the data.
+
+Standardizing text and names: abstracts have newline characters,
+LaTeX (surrounded by $ signs), commands (starting with \), and 
+names with non-English characters.
+
+FIRST STEP: write a function to remove newline and
+anything between $ signs.
+
+
+CONCRETE TO-DOS:
+1) We'll make a whenisgood poll to find a meeting time: we'd like to
+meet Tuesday or Wednesday, ideally. Ethan will make the whenisgood.
+
+2) Write a function to clean the abstract text.
+
+3) Jee Uhn will ask Matt to give us access to his NLP notes.
