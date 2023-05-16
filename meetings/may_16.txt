@@ -1,0 +1,39 @@
+We started by looking at Jenia's work on cleaning
+strings from abstract pulls. Michael had some ideas
+for how to proceed, and Jenia will work on this further.
+
+Let's try to choose a problem statement. Options:
+
+1) Michael: Stack-rank the daily arXiv email in a given subject
+class according to user's interest, after initial 30 papers chosen
+by user
+2) Ethan: unsupervised learning on a small collection of subject tags,
+in order to identify clusters that might provide identifiers for more
+granular searches by the userbase.
+
+^Let's work on these^.
+
+Jenia: should we try to find data on citations? 
+
+Ethan: Citations might be something we try to include
+in a second attempt, after first producing something
+we're happy with. Also, perhaps it would be easier to
+use a paper's References section as opposed to its 
+citations.
+
+Here's an interesting link to look through in the future:
+https://info.arxiv.org/labs/showcase.html. In particular,
+the IArXiv project seems to accomplish a task similar to
+(2) mentioned above.
+
+As for future meetings, people are generally flexible and available.
+It seems like 3pm eastern/12pm pacific on Tuesdays & Thursdays works.
+
+What are our goals for next meeting? (3pm eastern on Thursday)
+
+Jenia: figure out how to clean the abstracts
+Michael: Continue 
+Jee Uhn: Work on 
+Anirban: Make a toy LSTM model and see if it can run
+Jordyn: Look into finding bibliography data for papers
+Ethan: 
