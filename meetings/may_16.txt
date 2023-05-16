@@ -37,3 +37,14 @@ Jee Uhn: Work on
 Anirban: Make a toy LSTM model and see if it can run
 Jordyn: Look into finding bibliography data for papers
 Ethan: 
+
+Tentative working dataset: 1000 most recent articles from:
+math physics, pdes, representation theory, quantum algebra, differential geometry
+
+To discuss with project mentor:
+- feedback on the two concrete problem statements. Are these appropriately difficult to
+complete in the timeline?
+- dataset - Is this an appropriate size? Possibly use data from older (pre-2020) papers to
+have a better shot of finding journal info?
+- what are the most appropriate ways of measuring the success? Possible issues gathering
+citation info?
