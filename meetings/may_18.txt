@@ -1,0 +1,84 @@
+We have data to work with, thanks to Jenia and Jee Uhn.
+What should we do now? Form smaller groups to work
+on specific tasks? Feels very open ended right now.
+
+Recall our two goals:
+1) Clustering to find new subject tags
+2) Create a model that sifts through daily ArXiv mailers
+to suggest most interesting ones.
+
+Anirban has used pre-trained models from HuggingFace to 
+get some initial subject class classification predictions.
+
+We should discuss how to do vector embedding of these texts,
+and then dimension reduction since the dimension will
+certainly be way too high.
+
+We probably don't want to write our own tokenizer, at
+least at the beginning. Anirban simply called a particular
+tokenizer in his initial attempts.
+
+We also need to decide how to process certain math 
+words and phrases. For example, `Ricci Flow` or
+hyphenated words. (Customizing tokenization.)
+
+What tasks should we prioritize? What tasks can we
+expect to improve on later in the process, after
+building a first model?
+
+Where are the choices we're making? Let's bookkeep this
+for future reference, after making the first model.
+
+1) Model architecture
+2) Tokenization and lemmatization process
+3) Performance metrics
+4) What metric our model uses to determine "closeness"
+    of two documents
+5) Dataset and preprocessing
+6) What hyperparameter values we choose/tune.
+
+Jee Uhn is concerned that a pre-trained model like
+BERT might not have been trained on math papers,
+and so wouldn't perform well at tokenizing those
+documents. Perhaps for this reason we should
+train our own model.
+
+We can write our own tokenizer: a basic one would be
+to record the 500-1000 most frequent words.
+
+Michael noted that we also need to think about
+how to integrate information about authors. 
+
+Anirban: if we have some papers that seem "close"
+(where we have to choose the metric), then we
+can go look at the authors. If the authors are the
+same, then we recommend papers with similar values.
+Note that we have to choose the threshold for "close".
+
+We could think of a "collaborator graph" for
+the clustering project. Authors are nodes, and 
+edges represent collaborations.
+
+If we find latent subcategories during clustering,
+it would be cool to associate math words to these
+clusters that seem to determine them.
+
+Jordyn mentioned "topic modeling". Also aware of LDA
+from a previous project.
+
+How do we generate test data and evaluate the 
+paper recommender's performance on that data?
+
+Ethan's idea: use the clusterer model to generate
+"human-ish" sets of liked papers for a hypothetical
+user (i.e., draw them randomly from a subset of 
+clusters identified by the clusterer), and then 
+see how the paper recommender does at learning
+this.
+
+Things to ask mentor on Friday:
+1) Shoudl we just make choices early on and get
+a first model, before going back and re-evaluating 
+choices
+2) Thoughts on using a pre-trained model (or at least
+a base) vs. training our own.
