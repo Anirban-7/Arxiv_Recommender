@@ -5,8 +5,6 @@ from unicodedata import combining, normalize
 """
     Return the string, by "removing" any LaTeX code
 """
-
-
 def remove_latex(data):
     ## First, get rid of any LaTex expressions of the form \cite{...}, \ref{...}, etc..
     data = regex.sub("\\\cite\{.*?\}", '', data)
@@ -16,7 +14,6 @@ def remove_latex(data):
 
     return data
 
-
 """
     Return the string, by "removing" any
     diacritics like accents or curls and strokes (as in ø etc.) and the like.
@@ -24,22 +21,31 @@ def remove_latex(data):
     Reference: a blog post from
     https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-normalize-in-a-python-unicode-string
 """
-
 LATIN = "ä  æ  ǽ  đ ð ƒ ħ ı ł ø ǿ ö  œ  ß  ŧ ü "
 ASCII = "ae ae ae d d f h i l o o oe oe ss t ue"
-
 
 def remove_diacritics(string, outliers=str.maketrans(dict(zip(LATIN.split(), ASCII.split())))):
     return "".join(c for c in normalize("NFD", string.lower().translate(outliers)) if not combining(c))
 
 
 """
+    Return a string of the list of the authors separated by a comma
+    where special accents, strokes, and/or letters have been removed. 
+    Also, remove periods after abbreviations and hyphens in names.
+"""
+def clean_authors(data):
+    data = regex.sub("-", " ", data)
+    data = regex.sub("\.", "", data)
+    data = remove_diacritics(data, outliers=str.maketrans(dict(zip(LATIN.split(), ASCII.split()))))
+    # If we want to return a list of the author's names
+    # data = data.split(',')
+    return data
+
+"""
     Return the the lowercase version of the string after removing all 
-    newline characters, LaTeX commands, numeric characters, puntuation, 
+    newline characters, LaTeX commands, numeric characters, punctuation, 
     and any accents, strokes, special characters in names.
 """
-
-
 def clean_data(data):
     ## Convert to lowercase
     data = data.lower()
