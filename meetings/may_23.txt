@@ -1,0 +1,75 @@
+What have we each done so far?
+
+Jee-Uhn: played with BERT-topic and tried
+changing various hyperparameters. He has 
+clustered data into 60 topics. Jee Uhn 
+wants to play around with this more and 
+try to tweak topics.
+
+Ethan: Played around with bag of words to get 
+hands on experience. Talked with Michael and 
+Jee Uhn about project details. Created a notebook
+called 'test_collection' where we can each record
+a list of ArXiv paper IDs to be used to test our
+model(s) in the future. These IDs should be 
+for papers that you find interesting. We'll
+feed each of these 'user interest sets' into
+our model and individually evaluate its
+recommendations. When you've got some time in 
+the next few days, add your own list of interesting
+paper IDs. (Not urgent, but necessary at some point)
+
+Michael: Pulled 30 000 PDE papers and trained BERT-topic.
+Pulling took ~ one hour, training took another 70 minutes.
+The model found a LOT of topics: 350.
+You could tell from looking at the keywords 
+that it was grouping by really fine information.
+This notebook is in Michael's branch of the repo.
+
+Jenia: Looked at bag of words, computed TF-IDF scores.
+Last night also looked at word2vec with a pretrained
+model. Averaged over the word vectors to get sentence
+embedding and then computed cosine embedding. Then
+recommended 5 most similar papers. This is in Jenia's
+branch of the repo.
+
+Next steps: (** = most important)
+
+1) Test Jenia's bag of words and word2vec models on
+our new test set (see Ethan's update above.)
+Something like, "give us the 5 most relevant articles
+for this user."
+
+2) Discuss general schematic of project with everyone.
+Make sure we're all on the same page about the 
+various steps and components.
+
+**3) This week, create a basic end-to-end paper
+recommender using Jenia's work. Maybe recommend
+the most similar paper for each input paper.
+
+4) Decide on the "library" that our recommender 
+will recommend from. Ideally this is a large
+collection spanning all/most math subject tags.
+Michael found a large database of ArXiv papers
+on Kaggle. This one is too large, but it contains
+all STEM papers. Perhaps if we restrict to math
+papers, and perhaps other ways?
+
+Let's ask Andrew about this.
+
+5) Decide how our recommender delivers recommendations.
+User decides a threshold? Return one paper for each
+input paper? Recommend papers with highest average 
+similarity? Are papers returned with their similarity 
+score? Etc.
+
+Decision: for now, let's have the model recommend 
+the closest paper for each input paper.  So, for example,
+if the user inputs 10 papers, they will receive 10
+recommendations: one for each input paper.
+
+**6) Next, make our first attempt at a sentence
+transformer model. Hopefully we can do this
+by the end of this week. That way, we have next
+week to fine-tune the model and its architecture.
