@@ -27,7 +27,9 @@ recommendation corpus (not updated daily).
 To-Dos: 
 
 Ethan will finalize the dataset, including saving it
-in the most space-efficient format.
+in the most space-efficient format. Ethan will also
+reach out to Andrew about meeting on Friday, and then
+join another group.
 
 Jenia will conduct EDA on dataset, after Ethan uploads
 the dataset (i.e. the article metadata) to the repo.
