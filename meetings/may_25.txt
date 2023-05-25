@@ -1,0 +1,45 @@
+Ethan update: Downloaded 600k papers
+onto local machine
+
+Jeeuhn update: trained Bertopic model
+on df_experiment dataset in the repo.
+Working on a daily recommender model:
+it takes the papers from the daily 
+arXiv mailer and looks at the ones
+that belong to the clusters that the 
+user is interested in (if nonempty).
+Returns ones that are suitably similar.
+
+Jenia: worked more on word2vec and doc2vec
+models. We haven't yet done EDA. How do
+we do this/what should we do in this
+direction? Anirban suggests making 
+histrogram of different subject tags
+and clusters, and doing a correlation
+plot between these tags.
+
+Anirban: experimented with sentence
+transformers.
+
+For now: let's plan to have a static 
+recommendation corpus (not updated daily).
+
+To-Dos: 
+
+Ethan will finalize the dataset, including saving it
+in the most space-efficient format.
+
+Jenia will conduct EDA on dataset, after Ethan uploads
+the dataset (i.e. the article metadata) to the repo.
+Some of the most interesting EDA will happen after 
+doing topic modeling on the dataset. This will be a 
+collaborative effort among different subgroups.
+
+Jenia will also
+work a little more on the word2vec and doc2vec approaches
+as comparisons to the sentence transformer approach.
+
+Jeeuhn will adjust his code to use the new dataset 
+and produce recommendations from a static corpus (for now).
+Anirban will collaborate with Jeeuhn on this. They will use 
+a multilingual model.
