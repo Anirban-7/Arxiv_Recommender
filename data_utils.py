@@ -153,19 +153,7 @@ def math_cat_dict():
     math_dict = {k : v for (k,v) in zip(math_cats,math_subjects)}
     return math_dict
 
-
-def clean_cats(df):
-    """Takes a dataframe of arxiv search results and returns the same dataframe with the
-    'categories' columned 'cleaned' in the following sense:
-        1. They are returned as a single string separated by commas
-        2. All non-math tags are removed
-        3. The 'math-ph' tag is replaced by the correct 'math.MP' tag.
-
-    Args:
-        df: dataframe of arxiv search results
-    """
-
-    def clean_cat_list(cat_list):
+def clean_cat_list(cat_list):
         """Helper function taking a list of arxiv subject tags and returning a list which
         contains only the valid math tags contained in the input list.
 
@@ -194,6 +182,20 @@ def clean_cats(df):
         
         return out
 
+
+
+def clean_cats(df):
+    """Takes a dataframe of arxiv search results and returns the same dataframe with the
+    'categories' columned 'cleaned' in the following sense:
+        1. They are returned as a single string separated by commas
+        2. All non-math tags are removed
+        3. The 'math-ph' tag is replaced by the correct 'math.MP' tag.
+
+    Args:
+        df: dataframe of arxiv search results
+    """
+
+    
 
     categories = df['categories']
     split_cats = categories.apply(lambda x: x.split(','))

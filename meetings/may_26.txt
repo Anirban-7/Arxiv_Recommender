@@ -1,0 +1,68 @@
+What questions should we ask Andrew?
+
+1) How to speed things up? (Maybe not, 
+only took Jeeuhn max of 10 minutes per
+cell on Colab).
+
+2) How to deal with storage size limitations
+on GitHub?
+
+3) Logistics of using sentence transformers.
+
+4) How to choose subset of papers to rec from?
+
+Ethan update: made graphics investigating subject
+tag distribution and co-occurences of subject tags.
+
+Jenia update: more work on word2vec and doc2vec
+models. Use GoogleNews pretrained model for 
+word2vec, trained my own for doc2vec.
+Have coded up function to get recommendations
+for both models. Getting different recs for the
+same papers using these models.
+Michael suggests dimension reduction before
+cosine similarity, since that metric performs
+poorly with sparse data.
+
+Michael update: wrote up base_model.py to unify
+workflow to test any model recommenders.
+
+Jeeuhn update: trained Bertopic model on 50k
+recent papers. Most naive model. Produced topics
+for those papers. Then, input papers interested
+in, vectorize them using the SBERT model that 
+was trained, and then computed cosine similarity
+of these interest papers with the subset of the
+50k papers whose topics overlap with the topics
+of the input papers. These scores are ordered 
+in descending order and the most relevant is 
+returned.
+The performance was not very good, but Michael
+and Jeeuhn thinks that we can improve this.
+For example, 30k papers were unclassified into
+a topic, and the other 20k papers were distributed
+amongst 373 topics.
+
+The performance was subpar. There are many things
+we can do to try to improve. For example:
+
+1) not all papers are in English, and we used
+a multilingual model. Perhaps we can strip out
+the non-English ones using basic English-only words
+like "the". Could also use language detection
+model like xlm-roberta. Run this on the titles.
+
+2) Our dataset of 50k papers only goes back to
+September 2022, so it won't contain papers on 
+topics that are not common today. Users might 
+want to find such papers, though. We can increase
+the length by saving as a parquet/zip, and then
+maybe also chunking into separate files
+that are each small enough for GitHub.
+
+3) Pre-process abstracts before using sentence
+transformers. e.g. create a list of stopwords
+to remove.
+
+We'll meet again with Andrew on Wednesday at 3pm
+eastern.
