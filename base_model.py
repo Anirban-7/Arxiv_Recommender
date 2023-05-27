@@ -28,23 +28,29 @@ class Recommender:
         """
         self.vectorizer = vectorizer
         self.library = pd.read_parquet(path_to_library) #? Do we want to load only certain cols here
-        self.vectorized_library = np.loadtxt(path_to_vectorized)
+        self.vectorized_library = pd.read_parquet(path_to_vectorized).values
         self.vectorizer_kwargs = vectorizer_kwargs
 
-    def load_topic_models(self,path_to_models):
+    def load_topic_models(self,path_to_models,model_name):
         """Creates a dictionary whose item keys are the file names for each of our topic models and whose
         values are the correspending loaded BERTopic model.
+
+        Also returns the BERTopic model specified by model_name.
         
         Args:
             path_to_models: file path to the folder containing the topic models.
+            model_name: the file name of a BERTopic model to return
         """
 
         #TODO: Adapt to handle other topic models?
+        self.model_name = model_name
 
         model_files = glob.glob(os.path.join(path_to_models,"*"))
-        self.topic_models = {f.split("\\")[-1] : BERTopic.load(f) for f in model_files}
-
+        self.topic_models = {f.split("//")[-1] : BERTopic.load(f) for f in model_files}
         
+        return self.topic_models[model_name]
+
+
 
     def _get_topic_model(self,input):
         #### PLACEHOLDER THAT JUST RETURNS THE SINGLE EXAMPLE TOPIC MODEL.
