@@ -6,6 +6,7 @@ import numpy as np
 from bertopic import BERTopic
 import sentence_transformers.util, sentence_transformers.SentenceTransformer
 import data_utils
+import pyarrow as pa
 
 class Recommender:
     def __init__(self):
@@ -31,7 +32,7 @@ class Recommender:
         self.vectorized_library = pd.read_parquet(path_to_vectorized).values
         self.vectorizer_kwargs = vectorizer_kwargs
 
-    def load_topic_models(self,path_to_models,model_name):
+    def load_topic_models(self,path_to_models):
         """Creates a dictionary whose item keys are the file names for each of our topic models and whose
         values are the correspending loaded BERTopic model.
 
@@ -43,18 +44,15 @@ class Recommender:
         """
 
         #TODO: Adapt to handle other topic models?
-        self.model_name = model_name
 
         model_files = glob.glob(os.path.join(path_to_models,"*"))
-        self.topic_models = {f.split("//")[-1] : BERTopic.load(f) for f in model_files}
+        self.topic_models = {f.split('\\')[-1] : BERTopic.load(f) for f in model_files}
         
+
+
+
+    def get_topic_model(self,model_name):
         return self.topic_models[model_name]
-
-
-
-    def _get_topic_model(self,input):
-        #### PLACEHOLDER THAT JUST RETURNS THE SINGLE EXAMPLE TOPIC MODEL.
-        return self.topic_models['test_topic_model']
 
     def recommend(self,arxiv_id,use_topics=False):
         """Yields the top 5 most similar articles to an arxiv article input by the user.
@@ -76,9 +74,14 @@ class Recommender:
         input_title = input.title
         input_cats = data_utils.clean_cat_list(input.categories)
         input_authors = [author.name for author in input.authors]
+        input_doc = input_title + input_abs
 
         #* Transform the input abstract
-        input_embedding = self.vectorizer(input_abs,**self.vectorizer_kwargs)
+        if self.vectorizer_kwargs:
+            input_embedding = self.vectorizer(input_doc + input_abs, **self.vectorizer_kwargs)
+        else:
+            input_embedding = self.vectorizer(input_doc + input_abs)
+
         #* VECTORIZER = SENTENCE TRANSFORMER, OUTPUT IS A 1D NP ARRAY
         ####
 
