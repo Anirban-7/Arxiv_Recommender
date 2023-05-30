@@ -149,13 +149,13 @@ class Recommender:
             _ , input_probs = input_topic_model.transform(input_embedding)
 
             #### RETURNS 3 MOST LIKELY TOPICS
-            topic_indices = np.argpartition(input_probs[0], -3)[-3:] 
+            topic_indices = np.argpartition(input_probs[0], -3)[-3:]
 
             #### GET ALL DOCS IN THESE TOPICS
             doc_indicies = self.library.loc[self.library['topic_labels'].isin(topic_indices)].index
         
             #### GET EMBEDDINGS
-            embeddings = self.vectorized_library[doc_indicies]    
+            embeddings = self.vectorized_library[doc_indicies]
             ####
 
         #### NOW SEARCH FOR TOP 5 SIMILAR ABSTRACTS WITHIN THIS SUBSET
