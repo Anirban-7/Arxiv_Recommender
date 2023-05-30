@@ -7,6 +7,7 @@ from bertopic import BERTopic
 import sentence_transformers.util, sentence_transformers.SentenceTransformer
 import data_utils
 import pyarrow as pa
+from sklearn.preprocessing import MultiLabelBinarizer
 
 class Recommender:
     def __init__(self):
@@ -32,6 +33,33 @@ class Recommender:
         self.vectorized_library = pd.read_parquet(path_to_vectorized).values
         self.vectorizer_kwargs = vectorizer_kwargs
 
+    def _OHE_cats(self):
+        """Return a DataFrame of one-hot-encoded categories of the library with
+        the same index as the library
+        """
+        mlb = MultiLabelBinarizer()
+        category_map = data_utils.category_map()
+
+        def convert_to_eng(cat_array):
+            return [category_map['math.' + tag] for tag in cat_array]
+
+        lib = self.library.copy()
+        eng_cats = lib['strip_cat'].apply(convert_to_eng)
+        OHE_array = mlb.fit_transform(eng_cats)
+        
+        return pd.DataFrame(OHE_array,columns=mlb.classes_,index=lib.index)
+
+    def get_lib_topics(self):
+        """Create a pandas series whose index set is all occuring math subject tags in the library
+        and whose values are the count of the occurences of each subject. Sorted in descending order.
+
+        Returns:
+            _description_
+        """
+        return self._OHE_cats().sum(axis=0).sort_values(ascending=False)
+    
+    
+    
     def load_topic_models(self,path_to_models):
         """Creates a dictionary whose item keys are the file names for each of our topic models and whose
         values are the correspending loaded BERTopic model.
@@ -43,7 +71,6 @@ class Recommender:
             model_name: the file name of a BERTopic model to return
         """
 
-        #TODO: Adapt to handle other topic models?
 
         model_files = glob.glob(os.path.join(path_to_models,"*"))
         self.topic_models = {f.split('\\')[-1] : BERTopic.load(f) for f in model_files}
@@ -52,6 +79,14 @@ class Recommender:
 
 
     def get_topic_model(self,model_name):
+        """Retrieve specific topic model by file name
+
+        Args:
+            model_name: file name of the desired topic model
+
+        Returns:
+            The loaded BERTopic model object
+        """
         return self.topic_models[model_name]
 
     def recommend(self,arxiv_id,use_topics=False):
