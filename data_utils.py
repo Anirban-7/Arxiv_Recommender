@@ -3,6 +3,7 @@ import arxiv
 import regex  ## Regular expressions to clean data
 import string
 from unicodedata import combining, normalize
+from sklearn.preprocessing import MultiLabelBinarizer
 
 #### Tools for scraping the arxiv:
 
@@ -295,6 +296,23 @@ def category_map():
     'stat.OT': 'Other Statistics',
     'stat.TH': 'Statistics Theory'}
     return category_map
+
+
+def OHE_cats(df):
+    """Return a DataFrame of one-hot-encoded categories of the library with
+    the same index as the library
+    """
+    mlb = MultiLabelBinarizer()
+    category_map = category_map()
+
+    def convert_to_eng(cat_array):
+        return [category_map['math.' + tag] for tag in cat_array]
+
+    eng_cats = df['strip_cat'].apply(convert_to_eng)
+    OHE_array = mlb.fit_transform(eng_cats)
+    
+    return pd.DataFrame(OHE_array,columns=mlb.classes_,index=df.index)
+
 
 def clean_cat_list(cat_list):
         """Helper function taking a list of arxiv subject tags and returning a list which
