@@ -1,0 +1,595 @@
+,title_raw,abstract_raw,authors,strip_cat,doc_string
+0,Inverse Approximation Theory for Nonlinear Recurrent Neural Networks,"We prove an inverse approximation theorem for the approximation of nonlinear
+sequence-to-sequence relationships using RNNs. This is a so-called
+Bernstein-type result in approximation theory, which deduces properties of a
+target function under the assumption that it can be effectively approximated by
+a hypothesis space. In particular, we show that nonlinear sequence
+relationships, viewed as functional sequences, that can be stably approximated
+by RNNs with hardtanh/tanh activations must have an exponential decaying memory
+structure -- a notion that can be made precise. This extends the previously
+identified curse of memory in linear RNNs into the general nonlinear setting,
+and quantifies the essential limitations of the RNN architecture for learning
+sequential relationships with long-term memory. Based on the analysis, we
+propose a principled reparameterization method to overcome the limitations. Our
+theoretical results are confirmed by numerical experiments.","Shida Wang,Zhong Li,Qianxiao Li",['DS'],inverse approximation theory for nonlinear recurrent neural networkswe prove an inverse approximation theorem for the approximation of nonlinear sequence to sequence relationships using rnns this is a so called bernstein type result in approximation theory which deduces properties of a target function under the assumption that it can be effectively approximated by a hypothesis space in particular we show that nonlinear sequence relationships viewed as functional sequences that can be stably approximated by rnns with hardtanhtanh activations must have an exponential decaying memory structure a notion that can be made precise this extends the previously identified curse of memory in linear rnns into the general nonlinear setting and quantifies the essential limitations of the rnn architecture for learning sequential relationships with long term memory based on the analysis we propose a principled reparameterization method to overcome the limitations our theoretical results are confirmed by numerical experiments
+1,Sharp Spectral Rates for Koopman Operator Learning,"Non-linear dynamical systems can be handily described by the associated
+Koopman operator, whose action evolves every observable of the system forward
+in time. Learning the Koopman operator and its spectral decomposition from data
+is enabled by a number of algorithms. In this work we present for the first
+time non-asymptotic learning bounds for the Koopman eigenvalues and
+eigenfunctions. We focus on time-reversal-invariant stochastic dynamical
+systems, including the important example of Langevin dynamics. We analyze two
+popular estimators: Extended Dynamic Mode Decomposition (EDMD) and Reduced Rank
+Regression (RRR). Our results critically hinge on novel minimax estimation
+bounds for the operator norm error, that may be of independent interest. Our
+spectral learning bounds are driven by the simultaneous control of the operator
+norm error and a novel metric distortion functional of the estimated
+eigenfunctions. The bounds indicates that both EDMD and RRR have similar
+variance, but EDMD suffers from a larger bias which might be detrimental to its
+learning rate. Our results shed new light on the emergence of spurious
+eigenvalues, an issue which is well known empirically. Numerical experiments
+illustrate the implications of the bounds in practice.","Vladimir Kostic,Karim Lounici,Pietro Novelli,Massimiliano Pontil",['DS'],sharp spectral rates for koopman operator learningnon linear dynamical systems can be handily described by the associated koopman operator whose action evolves every observable of the system forward in time learning the koopman operator and its spectral decomposition from data is enabled by a number of algorithms in this work we present for the first time non asymptotic learning bounds for the koopman eigenvalues and eigenfunctions we focus on time reversal invariant stochastic dynamical systems including the important example of langevin dynamics we analyze two popular estimators extended dynamic mode decomposition edmd and reduced rank regression rrr our results critically hinge on novel minimax estimation bounds for the operator norm error that may be of independent interest our spectral learning bounds are driven by the simultaneous control of the operator norm error and a novel metric distortion functional of the estimated eigenfunctions the bounds indicates that both edmd and rrr have similar variance but edmd suffers from a larger bias which might be detrimental to its learning rate our results shed new light on the emergence of spurious eigenvalues an issue which is well known empirically numerical experiments illustrate the implications of the bounds in practice
+2,Clustering and Arnoux-Rauzy words,"We characterize the clustering of a word under the Burrows-Wheeler transform
+in terms of the resolution of a bounded number of bispecial factors belonging
+to the language generated by all its powers. We use this criterion to compute,
+in every given Arnoux-Rauzy language on three letters, an explicit bound $K$
+such that each word of length at least $K$ is not clustering; this bound is
+sharp for a set of Arnoux-Rauzy languages including the Tribonacci one. In the
+other direction, we characterize all standard Arnoux-Rauzy clustering words,
+and all perfectly clustering Arnoux-Rauzy words. We extend some results to
+episturmian languages, characterizing those which produce infinitely many
+clustering words, and to larger alphabets.","Sébastien Ferenczi,Luca Q. Zamboni",['DS'],clustering and arnoux rauzy wordswe characterize the clustering of a word under the burrows wheeler transform in terms of the resolution of a bounded number of bispecial factors belonging to the language generated by all its powers we use this criterion to compute in every given arnoux rauzy language on three letters an explicit bound such that each word of length at least is not clustering this bound is sharp for a set of arnoux rauzy languages including the tribonacci one in the other direction we characterize all standard arnoux rauzy clustering words and all perfectly clustering arnoux rauzy words we extend some results to episturmian languages characterizing those which produce infinitely many clustering words and to larger alphabets
+3,Node Embedding from Neural Hamiltonian Orbits in Graph Neural Networks,"In the graph node embedding problem, embedding spaces can vary significantly
+for different data types, leading to the need for different GNN model types. In
+this paper, we model the embedding update of a node feature as a Hamiltonian
+orbit over time. Since the Hamiltonian orbits generalize the exponential maps,
+this approach allows us to learn the underlying manifold of the graph in
+training, in contrast to most of the existing literature that assumes a fixed
+graph embedding manifold with a closed exponential map solution. Our proposed
+node embedding strategy can automatically learn, without extensive tuning, the
+underlying geometry of any given graph dataset even if it has diverse
+geometries. We test Hamiltonian functions of different forms and verify the
+performance of our approach on two graph node embedding downstream tasks: node
+classification and link prediction. Numerical experiments demonstrate that our
+approach adapts better to different types of graph datasets than popular
+state-of-the-art graph node embedding GNNs. The code is available at
+\url{https://github.com/zknus/Hamiltonian-GNN}.","Qiyu Kang,Kai Zhao,Yang Song,Sijie Wang,Wee Peng Tay",['DS'],node embedding from neural hamiltonian orbits in graph neural networksin the graph node embedding problem embedding spaces can vary significantly for different data types leading to the need for different gnn model types in this paper we model the embedding update of a node feature as a hamiltonian orbit over time since the hamiltonian orbits generalize the exponential maps this approach allows us to learn the underlying manifold of the graph in training in contrast to most of the existing literature that assumes a fixed graph embedding manifold with a closed exponential map solution our proposed node embedding strategy can automatically learn without extensive tuning the underlying geometry of any given graph dataset even if it has diverse geometries we test hamiltonian functions of different forms and verify the performance of our approach on two graph node embedding downstream tasks node classification and link prediction numerical experiments demonstrate that our approach adapts better to different types of graph datasets than popular state of the art graph node embedding gnns the code is available at urlhttpsgithubcomzknushamiltonian gnn
+4,Equidistribution of iterations of holomorphic correspondences and Hutchinson invariant sets,"In this paper we analyze a certain family of holomorphic correspondences on
+$\hat{\mathbb{C}}\times\hat{\mathbb{C}}$ and prove their equidistribution
+properties. In particular, for any correspondence in this family we prove that
+the naturally associated multivalued map $F$ is such that for any $a\in
+\mathbb{C}$, we have that $(F^n)_*(\delta_a)$ converges to a probability
+measure $\mu_F$ for which $F_*(\mu_F)=\mu_F d$ where $d$ is the degree of $F$.
+This result is used to show that the minimal Hutchinson invariant set,
+introduced in [ABS20a], of a large class of operators and for sufficiently
+large $n$ exists and is the support of the aforementioned measure. We also
+prove that in this situation the minimal Hutchinson-invariant set is a Cantor
+set.",Nils Hemmingsson,['DS'],equidistribution of iterations of holomorphic correspondences and hutchinson invariant setsin this paper we analyze a certain family of holomorphic correspondences on and prove their equidistribution properties in particular for any correspondence in this family we prove that the naturally associated multivalued map is such that for any  we have that converges to a probability measure for which where is the degree of  this result is used to show that the minimal hutchinson invariant set introduced in absa of a large class of operators and for sufficiently large exists and is the support of the aforementioned measure we also prove that in this situation the minimal hutchinson invariant set is a cantor set
+5,Belinskaya's theorem is optimal,"Belinskaya's theorem states that given an ergodic measure-preserving
+transformation, any other transformation with the same orbits and an
+$\mathrm{L}^1$ cocycle must be flip-conjugate to it. Our main result shows that
+this theorem is optimal: for all $p<1$ the integrability condition on the
+cocycle cannot be relaxed to being in $\mathrm{L}^p$. This also allows us to
+answer a question of Kerr and Li: for ergodic measure-preserving
+transformations, Shannon orbit equivalence doesn't boil down to flip-conjugacy.","Alessandro Carderi,Matthieu Joseph,François Le Maître,Romain Tessera","['DS', 'FA', 'GR']",belinskayas theorem is optimalbelinskayas theorem states that given an ergodic measure preserving transformation any other transformation with the same orbits and an cocycle must be flip conjugate to it our main result shows that this theorem is optimal for all the integrability condition on the cocycle cannot be relaxed to being in  this also allows us to answer a question of kerr and li for ergodic measure preserving transformations shannon orbit equivalence doesnt boil down to flip conjugacy
+6,Endemic Oscillations for SARS-CoV-2 Omicron -- A SIRS model analysis,"The SIRS model with constant vaccination and immunity waning rates is well
+known to show a transition from a disease-free to an endemic equilibrium as the
+basic reproduction number $r_0$ is raised above threshold. It is shown that
+this model maps to Hethcote's classic endemic model originally published in
+1973. In this way one obtains unifying formulas for a whole class of models
+showing endemic bifurcation. In particular, if the vaccination rate is smaller
+than the recovery rate and $r_- < r_0 < r_+$ for certain upper and lower bounds
+$r_\pm$, then trajectories spiral into the endemic equilibrium via damped
+infection waves. Latest data of the SARS-CoV-2 Omicron variant suggest that
+according to this simplified model continuous vaccination programs will not be
+capable to escape the oscillating endemic phase. However, in view of the strong
+damping factors predicted by the model, in reality these oscillations will
+certainly be overruled by time-dependent contact behaviors.",Florian Nill,['DS'],endemic oscillations for sars cov omicron a sirs model analysisthe sirs model with constant vaccination and immunity waning rates is well known to show a transition from a disease free to an endemic equilibrium as the basic reproduction number is raised above threshold it is shown that this model maps to hethcotes classic endemic model originally published in  in this way one obtains unifying formulas for a whole class of models showing endemic bifurcation in particular if the vaccination rate is smaller than the recovery rate and for certain upper and lower bounds  then trajectories spiral into the endemic equilibrium via damped infection waves latest data of the sars cov omicron variant suggest that according to this simplified model continuous vaccination programs will not be capable to escape the oscillating endemic phase however in view of the strong damping factors predicted by the model in reality these oscillations will certainly be overruled by time dependent contact behaviors
+7,Centralizer of fixed point free separating flows,"In this paper, we study the centralizer of a separating continuous flow
+without fixed points. We show that if $M$ is a compact metric space and
+$\phi_t:M\to M$ is a separating flow without fixed points, then $\phi_t$ has a
+quasi-trivial centralizer, that is, if a continuous flow $\psi_t$ commutes with
+$\phi_t$, then there exists a continuous function $A: M\to\mathbb{R}$ which is
+invariant along the orbit of $\phi_t$ such that $\psi_t(x)=\phi_{A(x)t}(x)$
+holds for all $x\in M$. We also show that if $M$ is a compact Riemannian
+manifold without boundary and $\Phi_u$ is a separating $C^1$
+$\mathbb{R}^d$-action on $M$, then $\Phi_u$ has a quasi-trivial centralizer,
+that is, if $\Psi_u$ is a $\mathbb{R}^d$-action on $M$ commuting with $\Phi_u$,
+then there is a continuous map $A: M\to\mathcal{M}_{d\times d}(\mathbb{R})$
+which is invariant along orbit of $\Phi_u$ such that
+$\Psi_{u}(x)=\Phi_{A(x)u}(x)$ for all $x\in M$. These improve Theorem 1 of
+\cite{O} and Theorem 2 of \cite{BRV} respectively.","Bo Han,Xiao Wen",['DS'],centralizer of fixed point free separating flowsin this paper we study the centralizer of a separating continuous flow without fixed points we show that if is a compact metric space and is a separating flow without fixed points then has a quasi trivial centralizer that is if a continuous flow commutes with  then there exists a continuous function which is invariant along the orbit of such that holds for all  we also show that if is a compact riemannian manifold without boundary and is a separating action on  then has a quasi trivial centralizer that is if is a action on commuting with  then there is a continuous map which is invariant along orbit of such that for all  these improve theorem of and theorem of respectively
+8,Two-phase free boundary problems for a class of fully nonlinear double-divergence systems,"In this article, we study a class of fully nonlinear double-divergence
+systems with free boundaries associated with a minimization problem. The
+variational structure of Hessian-dependent functional plays a fundamental role
+in proving the existence of the minimizers and then the existence of the
+solutions for the system. In addition, we establish gains of the integrability
+for the double-divergence equation. Consequently, we improve the regularity for
+the fully nonlinear equation in Sobolev and H\""older spaces.","Pêdra D. S. Andrade,Julio C. Correa-Hoyos",['AP'],two phase free boundary problems for a class of fully nonlinear double divergence systemsin this article we study a class of fully nonlinear double divergence systems with free boundaries associated with a minimization problem the variational structure of hessian dependent functional plays a fundamental role in proving the existence of the minimizers and then the existence of the solutions for the system in addition we establish gains of the integrability for the double divergence equation consequently we improve the regularity for the fully nonlinear equation in sobolev and holder spaces
+9,Asymptotic stability of the fourth order $φ^4$ kink for general perturbations in the energy space,"The Fourth order $\phi^4$ model generalizes the classical $\phi^4$ model of
+quantum field theory, sharing the same kink solution. It is also the dispersive
+counterpart of the well-known parabolic Cahn-Hilliard equation. Mathematically
+speaking, the kink is characterized by a fourth-order nonnegative linear
+operator with a simple kernel at the origin but no spectral gap. In this paper,
+we consider the kink of this theory, and prove orbital and asymptotic stability
+for any perturbation in the energy space.","Christopher Maulén,Claudio Muñoz",['AP'],asymptotic stability of the fourth order kink for general perturbations in the energy spacethe fourth order model generalizes the classical model of quantum field theory sharing the same kink solution it is also the dispersive counterpart of the well known parabolic cahn hilliard equation mathematically speaking the kink is characterized by a fourth order nonnegative linear operator with a simple kernel at the origin but no spectral gap in this paper we consider the kink of this theory and prove orbital and asymptotic stability for any perturbation in the energy space
+10,Nonlinear regularization estimates and global well-posedness for the Landau-Coulomb equation near equilibrium,"We consider the Landau equation with Coulomb potential in the spatially
+homogeneous case. We show short time propagation of smallness in $L^p$ norms
+for $p>3/2$ and instantaneous regularization in Sobolev spaces. This yields new
+short time quantitative a priori estimates that are unconditional near
+equilibrium. We combine these estimates with existing literature on global
+well-posedness for regular data to extend the well-posedness theory to small
+$L^p$ data with $p$ arbitrarily close to $3/2$. The threshold $p = 3/2$ agrees
+with previous work on conditional regularity for the Landau equation in the far
+from equilibrium regime.","William Golding,Maria Gualdani,Amélie Loher",['AP'],nonlinear regularization estimates and global well posedness for the landau coulomb equation near equilibriumwe consider the landau equation with coulomb potential in the spatially homogeneous case we show short time propagation of smallness in norms for and instantaneous regularization in sobolev spaces this yields new short time quantitative a priori estimates that are unconditional near equilibrium we combine these estimates with existing literature on global well posedness for regular data to extend the well posedness theory to small data with arbitrarily close to  the threshold agrees with previous work on conditional regularity for the landau equation in the far from equilibrium regime
+11,Variational inequality solutions and finite stopping time for a class of shear-thinning flows,"The aim of this paper is to study the existence of variational inequality
+weak solutions and of a finite stopping time for a large class of generalized
+Newtonian fluids shear-thinning flows. The existence of dissipative solutions
+for such flows is known since \cite{abbatiello-feireisl-20}. We submit here an
+alternative approach using variational inequality solutions as presented in
+\cite{duvaut-lions} in the two-dimensional Bingham flow. In order to prove the
+existence of such solutions we regularize the non-linear term and then we apply
+a Galerkin method for finally passing to the limit with respect to both
+regularization and Galerkin discretization parameters. In a second time, we
+prove the existence of a finite stopping time for Ostwald-De Waele and Bingham
+flows in dimension \(N \in \{2, 3\}\).","Laurent Chupin,Nicolae Cîndea,Geoffrey Lacour",['AP'],variational inequality solutions and finite stopping time for a class of shear thinning flowsthe aim of this paper is to study the existence of variational inequality weak solutions and of a finite stopping time for a large class of generalized newtonian fluids shear thinning flows the existence of dissipative solutions for such flows is known since  we submit here an alternative approach using variational inequality solutions as presented in in the two dimensional bingham flow in order to prove the existence of such solutions we regularize the non linear term and then we apply a galerkin method for finally passing to the limit with respect to both regularization and galerkin discretization parameters in a second time we prove the existence of a finite stopping time for ostwald de waele and bingham flows in dimension n in  
+12,A sub-Riemannian maximum modulus theorem,"In this note we prove a sub-Riemannian maximum modulus theorem in a Carnot
+group. Using a nontrivial counterexample, we also show that such result is best
+possible, in the sense that in its statement one cannot replace the
+right-invariant horizontal gradient with the left-invariant one.","Federico Buseghin,Nicolò Forcillo,Nicola Garofalo","['AP', 'DG']",a sub riemannian maximum modulus theoremin this note we prove a sub riemannian maximum modulus theorem in a carnot group using a nontrivial counterexample we also show that such result is best possible in the sense that in its statement one cannot replace the right invariant horizontal gradient with the left invariant one
+13,Enhanced profile estimates for ovals and translators,"We consider the profile function of ancient ovals and of noncollapsed
+translators. Recall that pioneering work of Angenent-Daskalopoulos-Sesum (JDG
+'19, Annals '20) gives a sharp $C^0$-estimate and a quadratic concavity
+estimate for the profile function of two-convex ancient ovals, which are
+crucial in their papers as well as a slew of subsequent papers on ancient
+solutions of mean curvature flow and Ricci flow. In this paper, we derive a
+sharp gradient estimate, which enhances their $C^0$-estimate, and a sharp
+Hessian estimate, which can be viewed as converse of their quadratic concavity
+estimate. Motivated by our forthcoming work on ancient noncollapsed flows in
+$\mathbb{R}^4$, we derive these estimates in the context of ancient ovals in
+$\mathbb{R}^3$ and noncollapsed translators in $\mathbb{R}^4$, though our
+methods seem to apply in other settings as well.","Kyeongsu Choi,Robert Haslhofer,Or Hershkovits","['AP', 'DG']",enhanced profile estimates for ovals and translatorswe consider the profile function of ancient ovals and of noncollapsed translators recall that pioneering work of angenent daskalopoulos sesum jdg  annals  gives a sharp estimate and a quadratic concavity estimate for the profile function of two convex ancient ovals which are crucial in their papers as well as a slew of subsequent papers on ancient solutions of mean curvature flow and ricci flow in this paper we derive a sharp gradient estimate which enhances their estimate and a sharp hessian estimate which can be viewed as converse of their quadratic concavity estimate motivated by our forthcoming work on ancient noncollapsed flows in  we derive these estimates in the context of ancient ovals in and noncollapsed translators in  though our methods seem to apply in other settings as well
+14,Bohnenblust--Hille inequality for cyclic groups,"For any $N>2$ and the multiplicative cyclic group $\Omega_N$ of order $N$,
+consider any function $f:\Omega_N^n\to\C$ and its Fourier expansion
+$f(z)=\sum_{\alpha\in\{0,1,\ldots,N-1\}^n}a_\alpha z^\alpha$ with $d=\deg(f)$
+denoting the degree $\deg(f)$ as a multivariate polynomial.
+  We prove a Bohnenblust--Hille (BH) inequality, which states that for any
+$d\ge 1$, the $\ell_{2d/(d+1)}$ norm of the Fourier coefficients of degree-$d$
+polynomial $f:\Omega_N^n\to\C$ is bounded by $C(d,N)\|f\|_\infty$ for $C(d,N)$
+independent of $n$.
+  This is the interpolating case between the now well-understood BH
+inequalities for functions on the poly-torus ($N =\infty$) and the hypercube
+($N=2$), but, as we explain, those extreme cases of $N$ have special properties
+whose absence for intermediate $N$ prevent a proof by the standard BH framework
+heretofore employed.
+  New techniques are developed exploiting the group structure of $\Omega_N^n$.
+  By known reductions (\cite{SVZ}), the cyclic group BH inequality also entails
+a noncommutative BH inequality for tensor products of the $N \times N$ complex
+matrix algebras (or in the language of quantum mechanics, systems of $N$-level
+qudits). These new BH inequalities generalize several applications in harmonic
+analysis and statistical learning theory to broader classes of functions and
+operators.","Joseph Slote,Alexander Volberg,Haonan Zhang","['FA', 'AP', 'CA']",bohnenblust hille inequality for cyclic groupsfor any and the multiplicative cyclic group of order  consider any function and its fourier expansion with denoting the degree as a multivariate polynomial we prove a bohnenblust hille bh inequality which states that for any  the norm of the fourier coefficients of degree polynomial is bounded by for independent of  this is the interpolating case between the now well understood bh inequalities for functions on the poly torus  and the hypercube  but as we explain those extreme cases of have special properties whose absence for intermediate prevent a proof by the standard bh framework heretofore employed new techniques are developed exploiting the group structure of  by known reductions  the cyclic group bh inequality also entails a noncommutative bh inequality for tensor products of the complex matrix algebras or in the language of quantum mechanics systems of level qudits these new bh inequalities generalize several applications in harmonic analysis and statistical learning theory to broader classes of functions and operators
+15,A boundary integral equation method for the complete electrode model in electrical impedance tomography with tests on real-world data,"We develop a boundary integral equation-based numerical method to solve for
+the electrostatic potential in two dimensions, inside a medium with piecewise
+constant conductivity, where the boundary condition is given by the complete
+electrode model (CEM). The CEM is seen as the most accurate model of the
+physical setting where electrodes are placed on the surface of an electrically
+conductive body, and currents are injected through the electrodes and the
+resulting voltages are measured again on these same electrodes. The integral
+equation formulation is based on expressing the electrostatic potential as the
+solution to a finite number of Laplace equations which are coupled through
+boundary matching conditions. This allows us to re-express the solution in
+terms of single layer potentials; the problem is thus re-cast as a system of
+integral equations on a finite number of smooth curves. We discuss an adaptive
+method for the solution of the resulting system of mildly singular integral
+equations. This solver is both fast and accurate. We then present a numerical
+inverse solver for electrical impedance tomography (EIT) which uses our forward
+solver at its core. To demonstrate the applicability of our results we test our
+numerical methods on an open electrical impedance tomography data set provided
+by the Finnish Inverse Problems Society.","Teemu Tyni,Adam R Stinchcombe,Spyros Alexakis","['NA', 'AP']",a boundary integral equation method for the complete electrode model in electrical impedance tomography with tests on real world datawe develop a boundary integral equation based numerical method to solve for the electrostatic potential in two dimensions inside a medium with piecewise constant conductivity where the boundary condition is given by the complete electrode model cem the cem is seen as the most accurate model of the physical setting where electrodes are placed on the surface of an electrically conductive body and currents are injected through the electrodes and the resulting voltages are measured again on these same electrodes the integral equation formulation is based on expressing the electrostatic potential as the solution to a finite number of laplace equations which are coupled through boundary matching conditions this allows us to re express the solution in terms of single layer potentials the problem is thus re cast as a system of integral equations on a finite number of smooth curves we discuss an adaptive method for the solution of the resulting system of mildly singular integral equations this solver is both fast and accurate we then present a numerical inverse solver for electrical impedance tomography eit which uses our forward solver at its core to demonstrate the applicability of our results we test our numerical methods on an open electrical impedance tomography data set provided by the finnish inverse problems society
+16,Higher-dimensional routes to the Standard Model bosons,"In the old spirit of Kaluza-Klein, we consider a spacetime of the form $P =
+M_4 \times K$, where $K$ is the Lie group $\mathrm{SU}(3)$ equipped with a
+left-invariant metric that is not fully right-invariant. This metric has a
+${\rm U}(1) \times \mathrm{SU}(3)$ isometry group, corresponding to the
+massless gauge bosons, and depends on a parameter $\phi$ with values in a
+subspace of $\mathfrak{su}(3)$ isomorphic to $\mathbb{C}^2$. It is shown that
+the classical Einstein-Hilbert Lagrangian density $R_P - 2 \Lambda$ on the
+higher-dimensional manifold $P$, after integration over $K$, encodes not only
+the Yang-Mills terms of the Standard Model over $M_4$, as in the usual
+Kaluza-Klein calculation, but also a kinetic term $|{\mathrm d}^A \phi|^2$
+identical to the covariant derivative of the Higgs field. For $\Lambda$ in an
+appropriate range, it also encodes a potential $V(| \phi|^2)$ having absolute
+minima with $|\phi_0|^2 \neq 0$, thereby inducing mass terms for the remaining
+gauge bosons. The classical masses of the resulting Higgs-like and gauge bosons
+are explicitly calculated as functions of the vacuum value $|\phi_0|^2$ in the
+simplest version of the model. In more general versions, the classical values
+of the strong and electroweak gauge coupling constants are given as functions
+of the parameters of the left-invariant metric on $K$.",Joao Baptista,"['DG', 'MP']",higher dimensional routes to the standard model bosonsin the old spirit of kaluza klein we consider a spacetime of the form  where is the lie group equipped with a left invariant metric that is not fully right invariant this metric has a isometry group corresponding to the massless gauge bosons and depends on a parameter with values in a subspace of isomorphic to  it is shown that the classical einstein hilbert lagrangian density on the higher dimensional manifold  after integration over  encodes not only the yang mills terms of the standard model over  as in the usual kaluza klein calculation but also a kinetic term identical to the covariant derivative of the higgs field for in an appropriate range it also encodes a potential having absolute minima with  thereby inducing mass terms for the remaining gauge bosons the classical masses of the resulting higgs like and gauge bosons are explicitly calculated as functions of the vacuum value in the simplest version of the model in more general versions the classical values of the strong and electroweak gauge coupling constants are given as functions of the parameters of the left invariant metric on 
+17,Upper bound for the grand canonical free energy of the Bose gas in the Gross-Pitaevskii limit,"We consider a homogeneous Bose gas in the Gross-Pitaevskii limit at
+temperatures that are comparable to the critical temperature for Bose-Einstein
+condensation in the ideal gas. Our main result is an upper bound for the grand
+canonical free energy in terms of two new contributions: (a) the free energy of
+the interacting condensate is given in terms of an effective theory describing
+its particle number fluctuations, (b) the free energy of the thermally excited
+particles equals that of a temperature-dependent Bogoliubov Hamiltonian.","Chiara Boccato,Andreas Deuchert,David Stocker",['MP'],upper bound for the grand canonical free energy of the bose gas in the gross pitaevskii limitwe consider a homogeneous bose gas in the gross pitaevskii limit at temperatures that are comparable to the critical temperature for bose einstein condensation in the ideal gas our main result is an upper bound for the grand canonical free energy in terms of two new contributions a the free energy of the interacting condensate is given in terms of an effective theory describing its particle number fluctuations b the free energy of the thermally excited particles equals that of a temperature dependent bogoliubov hamiltonian
+18,Double scaling limits of Dirac ensembles and Liouville quantum gravity,"In this paper we study ensembles of finite real spectral triples equipped
+with a path integral over the space of possible Dirac operators. In the
+noncommutative geometric setting of spectral triples, Dirac operators take the
+center stage as a replacement for a metric on a manifold. Thus, this path
+integral serves as a noncommutative analogue of integration over metrics, a key
+feature of a theory of quantum gravity. From these integrals in the so-called
+double scaling limit we derive critical exponents of minimal models from
+Liouville conformal field theory coupled with gravity. Additionally, the
+asymptotics of the partition function of these models satisfy differential
+equations such as Painlev\'e I, as a reduction of the KDV hierarchy, which is
+predicted by conformal field theory. This is all proven using well-established
+and rigorous techniques from random matrix theory.","Hamed Hessam,Masoud Khalkhali,Nathan Pagliaroli","['MP', 'OA', 'QA']",double scaling limits of dirac ensembles and liouville quantum gravityin this paper we study ensembles of finite real spectral triples equipped with a path integral over the space of possible dirac operators in the noncommutative geometric setting of spectral triples dirac operators take the center stage as a replacement for a metric on a manifold thus this path integral serves as a noncommutative analogue of integration over metrics a key feature of a theory of quantum gravity from these integrals in the so called double scaling limit we derive critical exponents of minimal models from liouville conformal field theory coupled with gravity additionally the asymptotics of the partition function of these models satisfy differential equations such as painleve i as a reduction of the kdv hierarchy which is predicted by conformal field theory this is all proven using well established and rigorous techniques from random matrix theory
+19,One-parameter discrete-time Calogero-Moser system,"We present a new type of integrable one-dimensional many-body systems called
+a one-parameter Calogero-Moser (CM) system. In the discrete level, the Lax
+pairs with a parameter are introduced and, of course, the discrete-time
+equations of motion are obtained as well as their corresponding discrete-time
+Lagrangian. The integrability feature of this new system can be captured
+through the discrete Lagrangian closure relation by employing a connection with
+the temporal Lax matrices of the discrete-time Ruijsenaars-Schneider (RS)
+system, exact solution, and the existence of the classical r-matrix. Under the
+appropriate limit on the parameter, which in this case is approaching zero, the
+standard CM system is retrieved both discrete-time and continuous-time.","Umpon Jairuk,Sikarin Yoo-Kong",['MP'],one parameter discrete time calogero moser systemwe present a new type of integrable one dimensional many body systems called a one parameter calogero moser cm system in the discrete level the lax pairs with a parameter are introduced and of course the discrete time equations of motion are obtained as well as their corresponding discrete time lagrangian the integrability feature of this new system can be captured through the discrete lagrangian closure relation by employing a connection with the temporal lax matrices of the discrete time ruijsenaars schneider rs system exact solution and the existence of the classical r matrix under the appropriate limit on the parameter which in this case is approaching zero the standard cm system is retrieved both discrete time and continuous time
+20,Temporal to Spatial Instability in a Flow System: A Comparison,"The definitions of temporal instability and of spatial instability in a flow
+system are comparatively surveyed. The simple model of one-dimensional Burgers'
+flow is taken as the scenario where such different conceptions of instability
+are described. The temporal analysis of instability stems from Lyapunov's
+theory, while the spatial analysis of instability interchanges time and space
+in defining the evolution variable. Thus, the growth rate parameter for
+temporally unstable perturbations of a basic flow state is to be replaced by a
+spatial growth rate when a coordinate assumes the role of evolution variable.
+Finally, the idea of spatial instability is applied to a Rayleigh-B\'enard
+system given by a fluid-saturated horizontal porous layer with an anisotropic
+permeability and impermeable boundaries kept at different uniform temperatures.",Antonio Barletta,['MP'],temporal to spatial instability in a flow system a comparisonthe definitions of temporal instability and of spatial instability in a flow system are comparatively surveyed the simple model of one dimensional burgers flow is taken as the scenario where such different conceptions of instability are described the temporal analysis of instability stems from lyapunovs theory while the spatial analysis of instability interchanges time and space in defining the evolution variable thus the growth rate parameter for temporally unstable perturbations of a basic flow state is to be replaced by a spatial growth rate when a coordinate assumes the role of evolution variable finally the idea of spatial instability is applied to a rayleigh benard system given by a fluid saturated horizontal porous layer with an anisotropic permeability and impermeable boundaries kept at different uniform temperatures
+21,Correlation of local densities of states on mesoscopic energy scales in random band matrices,"We are interested in the phase transition of the correlation function of
+local densities of states at mesoscopic scales of random band matrices of width
+$W$ in dimension $2$. As a result, we show that the local densities of states
+are alternately positively and negatively correlated in the diffusive regime
+$O(\log(L/W))$ times, $L$ being the size of he system.",Justine Louis,"['PR', 'MP']",correlation of local densities of states on mesoscopic energy scales in random band matriceswe are interested in the phase transition of the correlation function of local densities of states at mesoscopic scales of random band matrices of width in dimension  as a result we show that the local densities of states are alternately positively and negatively correlated in the diffusive regime times being the size of he system
+22,Necessary and sufficient conditions for one-dimensional variational problems with applications to elasticity,"This paper deals with necessary and sufficient conditions for weak and strong
+minimizers of functionals $\Phi(u)=\int_a^b f(x,u(x),u'(x))\,dx$, where $u\in
+C^1([a,b],{\mathbb R}^N)$. We first derive conditions which are simpler than
+the known ones, and then apply them to several particular problems, including
+stability problems in the elasticity theory. In particular, we solve some open
+problems in [A. Majumdar, A. Raisch: Stability of twisted rods, helices and
+buckling solutions in three dimensions, Nonlinearity 27 (2014), 2841--2867] by
+finding optimal conditions for the stability of a naturally straight Kirchhoff
+rod under various types of endpoint constraints.",Pavol Quittner,"['CA', 'MP']",necessary and sufficient conditions for one dimensional variational problems with applications to elasticitythis paper deals with necessary and sufficient conditions for weak and strong minimizers of functionals  where  we first derive conditions which are simpler than the known ones and then apply them to several particular problems including stability problems in the elasticity theory in particular we solve some open problems in a majumdar a raisch stability of twisted rods helices and buckling solutions in three dimensions nonlinearity   by finding optimal conditions for the stability of a naturally straight kirchhoff rod under various types of endpoint constraints
+23,Size-biased diffusion limits and the inclusion process,"We consider the inclusion process on the complete graph with vanishing
+diffusivity, which leads to condensation of particles in the thermodynamic
+limit. Describing particle configurations in terms of size-biased and
+appropriately scaled empirical measures of mass distribution, we establish
+convergence in law of the inclusion process to a measure-valued Markov process
+on the space of probability measures. In the case where the diffusivity
+vanishes like the inverse of the system size, the derived scaling limit is
+equivalent to the well known Poisson-Dirichlet diffusion, offering an
+alternative viewpoint on these well-established dynamics. Moreover, our
+approach covers all scaling regimes of the system parameters and yields a
+natural extension of the Poisson-Dirichlet diffusion to infinite mutation rate.
+We also discuss in detail connections to known results on related Fleming-Viot
+processes.","Paul Chleboun,Simon Gabriel,Stefan Grosskinsky","['PR', 'MP']",size biased diffusion limits and the inclusion processwe consider the inclusion process on the complete graph with vanishing diffusivity which leads to condensation of particles in the thermodynamic limit describing particle configurations in terms of size biased and appropriately scaled empirical measures of mass distribution we establish convergence in law of the inclusion process to a measure valued markov process on the space of probability measures in the case where the diffusivity vanishes like the inverse of the system size the derived scaling limit is equivalent to the well known poisson dirichlet diffusion offering an alternative viewpoint on these well established dynamics moreover our approach covers all scaling regimes of the system parameters and yields a natural extension of the poisson dirichlet diffusion to infinite mutation rate we also discuss in detail connections to known results on related fleming viot processes
+24,"Boundary rigidity, and non-rigidity, of projective structures","We investigate the property of boundary rigidity for the projective
+structures associated to torsion-free affine connections on connected analytic
+manifolds with boundary. We show that these structures are generically boundary
+rigid, meaning that any automorphism of a generic projective structure that
+restricts to the identity on the boundary must itself be the identity. However,
+and in contrast with what happens for example for conformal structures, we show
+that there exist projective structures which are not boundary rigid. We
+characterise these non-rigid structures by the vanishing of a certain local
+projective invariant of the boundary.","Jack Borthwick,Niky Kamran",['DG'],boundary rigidity and non rigidity of projective structureswe investigate the property of boundary rigidity for the projective structures associated to torsion free affine connections on connected analytic manifolds with boundary we show that these structures are generically boundary rigid meaning that any automorphism of a generic projective structure that restricts to the identity on the boundary must itself be the identity however and in contrast with what happens for example for conformal structures we show that there exist projective structures which are not boundary rigid we characterise these non rigid structures by the vanishing of a certain local projective invariant of the boundary
+25,Higher-dimensional routes to the Standard Model bosons,"In the old spirit of Kaluza-Klein, we consider a spacetime of the form $P =
+M_4 \times K$, where $K$ is the Lie group $\mathrm{SU}(3)$ equipped with a
+left-invariant metric that is not fully right-invariant. This metric has a
+${\rm U}(1) \times \mathrm{SU}(3)$ isometry group, corresponding to the
+massless gauge bosons, and depends on a parameter $\phi$ with values in a
+subspace of $\mathfrak{su}(3)$ isomorphic to $\mathbb{C}^2$. It is shown that
+the classical Einstein-Hilbert Lagrangian density $R_P - 2 \Lambda$ on the
+higher-dimensional manifold $P$, after integration over $K$, encodes not only
+the Yang-Mills terms of the Standard Model over $M_4$, as in the usual
+Kaluza-Klein calculation, but also a kinetic term $|{\mathrm d}^A \phi|^2$
+identical to the covariant derivative of the Higgs field. For $\Lambda$ in an
+appropriate range, it also encodes a potential $V(| \phi|^2)$ having absolute
+minima with $|\phi_0|^2 \neq 0$, thereby inducing mass terms for the remaining
+gauge bosons. The classical masses of the resulting Higgs-like and gauge bosons
+are explicitly calculated as functions of the vacuum value $|\phi_0|^2$ in the
+simplest version of the model. In more general versions, the classical values
+of the strong and electroweak gauge coupling constants are given as functions
+of the parameters of the left-invariant metric on $K$.",Joao Baptista,"['DG', 'MP']",higher dimensional routes to the standard model bosonsin the old spirit of kaluza klein we consider a spacetime of the form  where is the lie group equipped with a left invariant metric that is not fully right invariant this metric has a isometry group corresponding to the massless gauge bosons and depends on a parameter with values in a subspace of isomorphic to  it is shown that the classical einstein hilbert lagrangian density on the higher dimensional manifold  after integration over  encodes not only the yang mills terms of the standard model over  as in the usual kaluza klein calculation but also a kinetic term identical to the covariant derivative of the higgs field for in an appropriate range it also encodes a potential having absolute minima with  thereby inducing mass terms for the remaining gauge bosons the classical masses of the resulting higgs like and gauge bosons are explicitly calculated as functions of the vacuum value in the simplest version of the model in more general versions the classical values of the strong and electroweak gauge coupling constants are given as functions of the parameters of the left invariant metric on 
+26,A sub-Riemannian maximum modulus theorem,"In this note we prove a sub-Riemannian maximum modulus theorem in a Carnot
+group. Using a nontrivial counterexample, we also show that such result is best
+possible, in the sense that in its statement one cannot replace the
+right-invariant horizontal gradient with the left-invariant one.","Federico Buseghin,Nicolò Forcillo,Nicola Garofalo","['AP', 'DG']",a sub riemannian maximum modulus theoremin this note we prove a sub riemannian maximum modulus theorem in a carnot group using a nontrivial counterexample we also show that such result is best possible in the sense that in its statement one cannot replace the right invariant horizontal gradient with the left invariant one
+27,Enhanced profile estimates for ovals and translators,"We consider the profile function of ancient ovals and of noncollapsed
+translators. Recall that pioneering work of Angenent-Daskalopoulos-Sesum (JDG
+'19, Annals '20) gives a sharp $C^0$-estimate and a quadratic concavity
+estimate for the profile function of two-convex ancient ovals, which are
+crucial in their papers as well as a slew of subsequent papers on ancient
+solutions of mean curvature flow and Ricci flow. In this paper, we derive a
+sharp gradient estimate, which enhances their $C^0$-estimate, and a sharp
+Hessian estimate, which can be viewed as converse of their quadratic concavity
+estimate. Motivated by our forthcoming work on ancient noncollapsed flows in
+$\mathbb{R}^4$, we derive these estimates in the context of ancient ovals in
+$\mathbb{R}^3$ and noncollapsed translators in $\mathbb{R}^4$, though our
+methods seem to apply in other settings as well.","Kyeongsu Choi,Robert Haslhofer,Or Hershkovits","['AP', 'DG']",enhanced profile estimates for ovals and translatorswe consider the profile function of ancient ovals and of noncollapsed translators recall that pioneering work of angenent daskalopoulos sesum jdg  annals  gives a sharp estimate and a quadratic concavity estimate for the profile function of two convex ancient ovals which are crucial in their papers as well as a slew of subsequent papers on ancient solutions of mean curvature flow and ricci flow in this paper we derive a sharp gradient estimate which enhances their estimate and a sharp hessian estimate which can be viewed as converse of their quadratic concavity estimate motivated by our forthcoming work on ancient noncollapsed flows in  we derive these estimates in the context of ancient ovals in and noncollapsed translators in  though our methods seem to apply in other settings as well
+28,On the reduced space of multiplicative multivectors,"A strict Lie $2$-algebra $\Gamma(\wedge^\bullet A) \stackrel{T}{\rightarrow}
+\mathfrak{X}_{\mathrm{mult}}^\bullet(\mathcal{G})$ is associated with any Lie
+groupoid $\mathcal{G}$. Here, $\Gamma(\wedge^\bullet A)$ is the Schouten
+algebra of the tangent Lie algebroid $A$ of $\mathcal{G}$ and
+$\mathfrak{X}_{\mathrm{mult}}^\bullet(\mathcal{G})$ is the space of
+multiplicative multivectors on $\mathcal{G}$. The quotient
+${R}_{\mathrm{mult}}^\bullet:=\mathfrak{X}_{\mathrm{mult}}^\bullet(\mathcal{G})/\mathrm{Img}
+T$, a Morita invariant of $\mathcal{G}$, is called the reduced space of
+multiplicative multivectors. We prove a canonical decomposition formula of
+elements in $\mathfrak{X}_{\mathrm{mult}}^\bullet(\mathcal{G})$ and establish a
+key relation between ${R}_{\mathrm{mult}}^k$ and the cohomology $\mathrm{H}
+^1(\mathfrak{J} \mathcal{G},\wedge^k A)$ where $\mathfrak{J} \mathcal{G}$ is
+the jet groupoid of $\mathcal{G}$ and $1\leqslant k\leqslant \mathrm{rank} A$.
+We also study ${R}_{\mathrm{diff}}^\bullet $, the reduced space of Lie
+algebroid differentials on $A$. By taking infinitesimals, $\bar{\delta}: $
+${R}_{\mathrm{mult}}^\bullet $ $\to $ ${R}_{\mathrm{diff}}^\bullet $, the two
+reduced spaces are related. We find that the kernel of $\bar{\delta}$ is
+isomorphic to the kernel of the Van Est map $\mathrm{H}^1(\mathcal{G},\wedge^k
+\ker\rho)\to \mathrm{H}^1(A,\wedge^k \ker\rho)$, where $\rho$ is the anchor of
+$A$.","Zhuo Chen,Honglei Lang,Zhangju Liu","['AG', 'DG']",on the reduced space of multiplicative multivectorsa strict lie algebra is associated with any lie groupoid  here is the schouten algebra of the tangent lie algebroid of and is the space of multiplicative multivectors on  the quotient  a morita invariant of  is called the reduced space of multiplicative multivectors we prove a canonical decomposition formula of elements in and establish a key relation between and the cohomology where is the jet groupoid of and  we also study  the reduced space of lie algebroid differentials on  by taking infinitesimals  the two reduced spaces are related we find that the kernel of is isomorphic to the kernel of the van est map  where is the anchor of 
+29,Intrinsic shape analysis in archaeology: A case study on ancient sundials,"This paper explores a novel mathematical approach to extract archaeological
+insights from ensembles of similar artifact shapes. We show that by considering
+all the shape information in a find collection, it is possible to identify
+shape patterns that would be difficult to discern by considering the artifacts
+individually or by classifying shapes into predefined archaeological types and
+analyzing the associated distinguishing characteristics. Recently, series of
+high-resolution digital representations of artifacts have become available, and
+we explore their potential on a set of 3D models of ancient Greek and Roman
+sundials, with the aim of providing alternatives to the traditional
+archaeological method of ``trend extraction by ordination'' (typology). In the
+proposed approach, each 3D shape is represented as a point in a shape space --
+a high-dimensional, curved, non-Euclidean space. By performing regression in
+shape space, we find that for Roman sundials, the bend of the sundials'
+shadow-receiving surface changes with the location's latitude. This suggests
+that, apart from the inscribed hour lines, also a sundial's shape was adjusted
+to the place of installation. As an example of more advanced inference, we use
+the identified trend to infer the latitude at which a sundial, whose
+installation location is unknown, was placed. We also derive a novel method for
+differentiated morphological trend assertion, building upon and extending the
+theory of geometric statistics and shape analysis. Specifically, we present a
+regression-based method for statistical normalization of shapes that serves as
+a means of disentangling parameter-dependent effects (trends) and unexplained
+variability.","Martin Hanik,Benjamin Ducke,Hans-Christian Hege,Friederike Fless,Christoph von Tycowicz",['DG'],intrinsic shape analysis in archaeology a case study on ancient sundialsthis paper explores a novel mathematical approach to extract archaeological insights from ensembles of similar artifact shapes we show that by considering all the shape information in a find collection it is possible to identify shape patterns that would be difficult to discern by considering the artifacts individually or by classifying shapes into predefined archaeological types and analyzing the associated distinguishing characteristics recently series of high resolution digital representations of artifacts have become available and we explore their potential on a set of d models of ancient greek and roman sundials with the aim of providing alternatives to the traditional archaeological method of trend extraction by ordination typology in the proposed approach each d shape is represented as a point in a shape space a high dimensional curved non euclidean space by performing regression in shape space we find that for roman sundials the bend of the sundials shadow receiving surface changes with the locations latitude this suggests that apart from the inscribed hour lines also a sundials shape was adjusted to the place of installation as an example of more advanced inference we use the identified trend to infer the latitude at which a sundial whose installation location is unknown was placed we also derive a novel method for differentiated morphological trend assertion building upon and extending the theory of geometric statistics and shape analysis specifically we present a regression based method for statistical normalization of shapes that serves as a means of disentangling parameter dependent effects trends and unexplained variability
+30,Covariant definition of Double Null Data and geometric uniqueness of the characteristic initial value problem,"The characteristic Cauchy problem of the Einstein field equations has been
+recently addressed from a completely abstract viewpoint by means of
+hypersurface data and, in particular, via the notion of double null data.
+However, this definition was given in a partially gauge-fixed form. In this
+paper we generalize the notion of double null data in a fully diffeomorphism
+and gauge covariant way, and show that the definition is complete by proving
+that no extra conditions are needed to embed the double null data in some
+spacetime. The second aim of the paper is to show that the characteristic
+Cauchy problem satisfies a geometric uniqueness property. Specifically, we
+introduce a natural notion of isometry at the abstract level such that two
+double null data that are isometric in this sense give rise to isometric
+spacetimes.","Marc Mars,Gabriel Sánchez-Pérez","['AP', 'DG']",covariant definition of double null data and geometric uniqueness of the characteristic initial value problemthe characteristic cauchy problem of the einstein field equations has been recently addressed from a completely abstract viewpoint by means of hypersurface data and in particular via the notion of double null data however this definition was given in a partially gauge fixed form in this paper we generalize the notion of double null data in a fully diffeomorphism and gauge covariant way and show that the definition is complete by proving that no extra conditions are needed to embed the double null data in some spacetime the second aim of the paper is to show that the characteristic cauchy problem satisfies a geometric uniqueness property specifically we introduce a natural notion of isometry at the abstract level such that two double null data that are isometric in this sense give rise to isometric spacetimes
+31,"Sharp bounds on the height of K-semistable toric Fano varieties, I","Inspired by Fujita's algebro-geometric result that complex projective space
+has maximal degree among all K-semistable Fano varieties, we conjecture that
+the height of a K-semistable metrized arithmetic Fano variety X of relative
+dimension n is maximal when X is the projective space over the integers,
+endowed with the Fubini-Study metric. Our main result establishes the
+conjecture for the canonical integral model of a toric Fano variety when n less
+than or equal to 6 (the extension to higher dimensions is conditioned on a
+conjectural ""gap hypothesis"" for the degree). Translated into toric Kahler
+geometry this result yields a sharp lower bound on a toric invariant introduced
+by Donaldson, defined as the minimum of the toric Mabuchi functional. We
+furthermore reformulate our conjecture as an optimal lower bound on Odaka's
+modular height. Along the way we show how to control the height of the
+canonical toric model X, with respect to the Kahler-Einstein metric, by the
+algebro-geometric degree of X in any dimension n. In a sequel to this paper our
+height conjecture is established for any projective diagonal Fano hypersurface,
+by exploiting a more general logarithmic setup.","Rolf Andreasson,Robert J. Berman","['AG', 'DG', 'NT']",sharp bounds on the height of k semistable toric fano varieties iinspired by fujitas algebro geometric result that complex projective space has maximal degree among all k semistable fano varieties we conjecture that the height of a k semistable metrized arithmetic fano variety x of relative dimension n is maximal when x is the projective space over the integers endowed with the fubini study metric our main result establishes the conjecture for the canonical integral model of a toric fano variety when n less than or equal to the extension to higher dimensions is conditioned on a conjectural gap hypothesis for the degree translated into toric kahler geometry this result yields a sharp lower bound on a toric invariant introduced by donaldson defined as the minimum of the toric mabuchi functional we furthermore reformulate our conjecture as an optimal lower bound on odakas modular height along the way we show how to control the height of the canonical toric model x with respect to the kahler einstein metric by the algebro geometric degree of x in any dimension n in a sequel to this paper our height conjecture is established for any projective diagonal fano hypersurface by exploiting a more general logarithmic setup
+32,Rectifiable paths with polynomial log-signature are straight lines,"The signature of a rectifiable path is a tensor series in the tensor algebra
+whose coefficients are definite iterated integrals of the path. The signature
+characterises the path up to a generalised form of reparametrisation. It is a
+classical result of K. T. Chen that the log-signature (the logarithm of the
+signature) is a Lie series. A Lie series is polynomial if it has finite degree.
+We show that the log-signature is polynomial if and only if the path is a
+straight line up to reparametrisation. Consequently, the log-signature of a
+rectifiable path either has degree one or infinite support. Though our result
+pertains to rectifiable paths, the proof uses results from rough path theory,
+in particular that the signature characterises a rough path up to
+reparametrisation.","Peter K. Friz,Terry Lyons,Anna Seigal","['RA', 'AC', 'CA', 'PR', 'ST']",rectifiable paths with polynomial log signature are straight linesthe signature of a rectifiable path is a tensor series in the tensor algebra whose coefficients are definite iterated integrals of the path the signature characterises the path up to a generalised form of reparametrisation it is a classical result of k t chen that the log signature the logarithm of the signature is a lie series a lie series is polynomial if it has finite degree we show that the log signature is polynomial if and only if the path is a straight line up to reparametrisation consequently the log signature of a rectifiable path either has degree one or infinite support though our result pertains to rectifiable paths the proof uses results from rough path theory in particular that the signature characterises a rough path up to reparametrisation
+33,Hyperbolic embedding of infinite-dimensional convex bodies,"In this article, we use the second intrinsic volume to define a metric on the
+space of homothetic classes of Gaussian bounded convex bodies in a separable
+real Hilbert space. Using kernels of hyperbolic type, we can deduce that this
+space is isometrically embedded into an infinite-dimensional real hyperbolic
+space. Applying Malliavin calculus, it is possible to adapt integral geometry
+for convex bodies in infinite dimensions. Moreover, we give a new formula for
+computing second intrinsic volumes of convex bodies and offer a description of
+the completion for the hyperbolic embedding of Gaussian bounded convex bodies
+with dimension at least two and thus answer a question asked by Debin and
+Fillastre [DF22].",Yusen Long,"['MG', 'PR']",hyperbolic embedding of infinite dimensional convex bodiesin this article we use the second intrinsic volume to define a metric on the space of homothetic classes of gaussian bounded convex bodies in a separable real hilbert space using kernels of hyperbolic type we can deduce that this space is isometrically embedded into an infinite dimensional real hyperbolic space applying malliavin calculus it is possible to adapt integral geometry for convex bodies in infinite dimensions moreover we give a new formula for computing second intrinsic volumes of convex bodies and offer a description of the completion for the hyperbolic embedding of gaussian bounded convex bodies with dimension at least two and thus answer a question asked by debin and fillastre df
+34,Correlation of local densities of states on mesoscopic energy scales in random band matrices,"We are interested in the phase transition of the correlation function of
+local densities of states at mesoscopic scales of random band matrices of width
+$W$ in dimension $2$. As a result, we show that the local densities of states
+are alternately positively and negatively correlated in the diffusive regime
+$O(\log(L/W))$ times, $L$ being the size of he system.",Justine Louis,"['PR', 'MP']",correlation of local densities of states on mesoscopic energy scales in random band matriceswe are interested in the phase transition of the correlation function of local densities of states at mesoscopic scales of random band matrices of width in dimension  as a result we show that the local densities of states are alternately positively and negatively correlated in the diffusive regime times being the size of he system
+35,Prediction theory in Hilbert Spaces: Operator-valued Szego Theory,"In this paper, we extend some classical results of the Szego theory of
+orthogonal polynomials on the unit circle to the infinite-dimensional case.","Badr Missaoui,Nicholas H. Bingham",['PR'],prediction theory in hilbert spaces operator valued szego theoryin this paper we extend some classical results of the szego theory of orthogonal polynomials on the unit circle to the infinite dimensional case
+36,Size-biased diffusion limits and the inclusion process,"We consider the inclusion process on the complete graph with vanishing
+diffusivity, which leads to condensation of particles in the thermodynamic
+limit. Describing particle configurations in terms of size-biased and
+appropriately scaled empirical measures of mass distribution, we establish
+convergence in law of the inclusion process to a measure-valued Markov process
+on the space of probability measures. In the case where the diffusivity
+vanishes like the inverse of the system size, the derived scaling limit is
+equivalent to the well known Poisson-Dirichlet diffusion, offering an
+alternative viewpoint on these well-established dynamics. Moreover, our
+approach covers all scaling regimes of the system parameters and yields a
+natural extension of the Poisson-Dirichlet diffusion to infinite mutation rate.
+We also discuss in detail connections to known results on related Fleming-Viot
+processes.","Paul Chleboun,Simon Gabriel,Stefan Grosskinsky","['PR', 'MP']",size biased diffusion limits and the inclusion processwe consider the inclusion process on the complete graph with vanishing diffusivity which leads to condensation of particles in the thermodynamic limit describing particle configurations in terms of size biased and appropriately scaled empirical measures of mass distribution we establish convergence in law of the inclusion process to a measure valued markov process on the space of probability measures in the case where the diffusivity vanishes like the inverse of the system size the derived scaling limit is equivalent to the well known poisson dirichlet diffusion offering an alternative viewpoint on these well established dynamics moreover our approach covers all scaling regimes of the system parameters and yields a natural extension of the poisson dirichlet diffusion to infinite mutation rate we also discuss in detail connections to known results on related fleming viot processes
+37,Convergence of infinitesimal generators and stability of convex monotone semigroups,"Based on the convergence of their infinitesimal generators in the mixed
+topology, we provide a stability result for strongly continuous convex monotone
+semigroups on spaces of continuous functions. In contrast to previous results,
+we do not rely on the theory of viscosity solutions but use a recent comparison
+principle which uniquely determines the semigroup via its $\Gamma$-generator
+defined on the Lipschitz set and therefore resembles the classical analogue
+from the linear case. The framework also allows for discretizations both in
+time and space and covers a variety of applications. This includes Euler
+schemes and Yosida-type approximations for upper envelopes of families of
+linear semigroups, stability results and finite-difference schemes for convex
+HJB equations, Freidlin-Wentzell-type results and Markov chain approximations
+for a class of stochastic optimal control problems and continuous-time Markov
+processes with uncertain transition probabilities.","Jonas Blessing,Michael Kupper,Max Nendel","['AP', 'OC', 'PR']",convergence of infinitesimal generators and stability of convex monotone semigroupsbased on the convergence of their infinitesimal generators in the mixed topology we provide a stability result for strongly continuous convex monotone semigroups on spaces of continuous functions in contrast to previous results we do not rely on the theory of viscosity solutions but use a recent comparison principle which uniquely determines the semigroup via its generator defined on the lipschitz set and therefore resembles the classical analogue from the linear case the framework also allows for discretizations both in time and space and covers a variety of applications this includes euler schemes and yosida type approximations for upper envelopes of families of linear semigroups stability results and finite difference schemes for convex hjb equations freidlin wentzell type results and markov chain approximations for a class of stochastic optimal control problems and continuous time markov processes with uncertain transition probabilities
+38,Central limit theorem for smooth statistics of one-dimensional free fermions,"We consider the determinantal point processes associated with the spectral
+projectors of a Schr\""odinger operator on $\mathbb{R}$, with a smooth confining
+potential. In the semiclassical limit, where the number of particles tends to
+infinity, we obtain a Szeg\H{o}-type central limit theorem (CLT) for the
+fluctuations of smooth linear statistics. More precisely, the Laplace transform
+of any statistic converges without renormalization to a Gaussian limit with a
+$H^{1/2}$-type variance, which depends on the potential. In the one-well
+(one-cut) case, using the quantum action-angle theorem and additional
+micro-local tools, we reduce the problem to the asymptotics of Fredholm
+determinants of certain approximately Toeplitz operators. In the multi-cut
+case, we show that for generic potentials, a similar result holds and the
+contributions of each wells are independent in the limit.","Alix Deleporte,Gaultier Lambert","['SP', 'MP', 'PR']",central limit theorem for smooth statistics of one dimensional free fermionswe consider the determinantal point processes associated with the spectral projectors of a schrodinger operator on  with a smooth confining potential in the semiclassical limit where the number of particles tends to infinity we obtain a szegho type central limit theorem clt for the fluctuations of smooth linear statistics more precisely the laplace transform of any statistic converges without renormalization to a gaussian limit with a type variance which depends on the potential in the one well one cut case using the quantum action angle theorem and additional micro local tools we reduce the problem to the asymptotics of fredholm determinants of certain approximately toeplitz operators in the multi cut case we show that for generic potentials a similar result holds and the contributions of each wells are independent in the limit
+39,One-dimensional discrete Gaussian Markov processes: Harmonic decomposition of invariant boundary conditions,"We study invariant boundary conditions for one dimensional discrete Gaussian
+Markov processes, basic toy models of spatial Markov processes in statistical
+mechanics. More precisely, we give a decomposition of boundary objects in a non
+trivial basis from the study of a meromorphic matrix-valued function $\Phi$
+(inherent to the model) and its singularities. This provides a simple algorithm
+for the explicit computation of invariant measures. As an application, we give
+an ""eigen"" version of Szeg\H{o} limit theorem for matrix valued trigonometric
+polynomials.",Emilien Bodiot,['PR'],one dimensional discrete gaussian markov processes harmonic decomposition of invariant boundary conditionswe study invariant boundary conditions for one dimensional discrete gaussian markov processes basic toy models of spatial markov processes in statistical mechanics more precisely we give a decomposition of boundary objects in a non trivial basis from the study of a meromorphic matrix valued function inherent to the model and its singularities this provides a simple algorithm for the explicit computation of invariant measures as an application we give an eigen version of szegho limit theorem for matrix valued trigonometric polynomials
+40,The Algebraic and Analytic Compactifications of the Hitchin Moduli Space,"Following the work of Mazzeo-Swoboda-Weiss-Witt and Mochizuki, there is a map
+$\overline{\Xi}$ between the algebraic compactification of the Dolbeault moduli
+space of $\mathsf{SL}(2,\mathbb{C})$ Higgs bundles on a smooth projective curve
+coming from the $\mathbb{C}^\ast$ action, and the analytic compactification of
+Hitchin's moduli space of solutions to the $\mathsf{SU}(2)$ self-duality
+equations on a Riemann surface obtained by adding solutions to the decoupled
+equations, known as ``limiting configurations''. This map extends the classical
+Kobayashi-Hitchin correspondence. The main result of this paper is that
+$\overline{\Xi}$ fails to be continuous at the boundary over a certain subset
+of the discriminant locus of the Hitchin fibration. This suggests the
+possibility of a third, refined compactification which dominates both.","Siqi He,Rafe Mazzeo,Xuesen Na,Richard Wentworth",['DG'],the algebraic and analytic compactifications of the hitchin moduli spacefollowing the work of mazzeo swoboda weiss witt and mochizuki there is a map between the algebraic compactification of the dolbeault moduli space of higgs bundles on a smooth projective curve coming from the action and the analytic compactification of hitchins moduli space of solutions to the self duality equations on a riemann surface obtained by adding solutions to the decoupled equations known as limiting configurations this map extends the classical kobayashi hitchin correspondence the main result of this paper is that fails to be continuous at the boundary over a certain subset of the discriminant locus of the hitchin fibration this suggests the possibility of a third refined compactification which dominates both
+41,Strange Random Topology of the Circle,"We characterise high-dimensional topology that arises from a random Cech
+complex constructed on the circle. Expected Euler characteristic curve is
+computed, where we observe limiting spikes. The spikes correspond to expected
+Betti numbers growing arbitrarily large over shrinking intervals of filtration
+radii. Using the fact that the homotopy type of the random Cech complex is
+either an odd-dimensional sphere or a bouquet of even-dimensional spheres, we
+give probabilistic bounds of the homotopy types. By departing from the
+conventional practice of scaling down filtration radii as the sample size grows
+large, our findings indicate that the full breadth of filtration radii leads to
+interesting systematic behaviour that cannot be regarded as ""topological
+noise"".",Uzu Lim,"['PR', 'AT']",strange random topology of the circlewe characterise high dimensional topology that arises from a random cech complex constructed on the circle expected euler characteristic curve is computed where we observe limiting spikes the spikes correspond to expected betti numbers growing arbitrarily large over shrinking intervals of filtration radii using the fact that the homotopy type of the random cech complex is either an odd dimensional sphere or a bouquet of even dimensional spheres we give probabilistic bounds of the homotopy types by departing from the conventional practice of scaling down filtration radii as the sample size grows large our findings indicate that the full breadth of filtration radii leads to interesting systematic behaviour that cannot be regarded as topological noise
+42,Systolic inequalities for K3 surfaces via stability conditions,"We introduce the notions of categorical systoles and categorical volumes of
+Bridgeland stability conditions on triangulated categories. We prove that for
+any projective K3 surface, there exists a constant C depending only on the rank
+and discriminant of its Picard group, such that $$\mathrm{sys}(\sigma)^2\leq
+C\cdot\mathrm{vol}(\sigma)$$ holds for any stability condition on the derived
+category of coherent sheaves on the K3 surface. This is an algebro-geometric
+generalization of a classical systolic inequality on two-tori. We also discuss
+applications of this inequality in symplectic geometry.",Yu-Wei Fan,"['AG', 'CO', 'DG', 'SG']",systolic inequalities for k surfaces via stability conditionswe introduce the notions of categorical systoles and categorical volumes of bridgeland stability conditions on triangulated categories we prove that for any projective k surface there exists a constant c depending only on the rank and discriminant of its picard group such that holds for any stability condition on the derived category of coherent sheaves on the k surface this is an algebro geometric generalization of a classical systolic inequality on two tori we also discuss applications of this inequality in symplectic geometry
+43,Family Floer SYZ conjecture for $A_n$ singularity,"We resolve a mathematically precise SYZ conjecture for $A_n$ singularity by
+building a quantum-corrected T-duality between two singular torus fibrations
+related to the Kahler geometry of the $A_n$-smoothing and the Berkovich
+geometry of the $A_n$-resolution, respectively. Our approach involves heavy
+computations that embody a non-archimedean version of the partition of unity,
+and it confirms the strategy that patching verified local singularity models
+brings global SYZ conjecture solutions (like K3 surfaces) within reach. There
+is also remarkably explicit extra evidence concerning the collision of singular
+fibers and braid group actions. On one hand, we address the central challenge
+of matching SYZ singular loci identified by Joyce. In reality, we construct not
+merely an isolated SYZ mirror fibration partner, but a parameter-dependent one
+that always keeps the matching singular loci plus integral affine structure,
+even when the collision of singular fibers occurs. On the other hand, our SYZ
+result surprisingly displays a visible tie, regardless of the parameter choice,
+between the $(A_n)$-configuration of Lagrangian spheres occurred as vanishing
+cycles in the $A_n$-smoothing and the exceptional locus of rational
+$(-2)$-curves in the $A_n$-resolution. It closely aligns with the celebrated
+works of Khovanov, Seidel, and Thomas from around 20 years ago in a somewhat
+distant subject, providing geometric evidence for the family Floer functor
+approach explored by Abouzaid and Fukaya. Intriguingly, these discoveries use
+certain explicit realizations by order statistics.",Hang Yuan,"['AG', 'DG', 'MP', 'RT', 'SG']",family floer syz conjecture for singularitywe resolve a mathematically precise syz conjecture for singularity by building a quantum corrected t duality between two singular torus fibrations related to the kahler geometry of the smoothing and the berkovich geometry of the resolution respectively our approach involves heavy computations that embody a non archimedean version of the partition of unity and it confirms the strategy that patching verified local singularity models brings global syz conjecture solutions like k surfaces within reach there is also remarkably explicit extra evidence concerning the collision of singular fibers and braid group actions on one hand we address the central challenge of matching syz singular loci identified by joyce in reality we construct not merely an isolated syz mirror fibration partner but a parameter dependent one that always keeps the matching singular loci plus integral affine structure even when the collision of singular fibers occurs on the other hand our syz result surprisingly displays a visible tie regardless of the parameter choice between the configuration of lagrangian spheres occurred as vanishing cycles in the smoothing and the exceptional locus of rational curves in the resolution it closely aligns with the celebrated works of khovanov seidel and thomas from around years ago in a somewhat distant subject providing geometric evidence for the family floer functor approach explored by abouzaid and fukaya intriguingly these discoveries use certain explicit realizations by order statistics
+44,Enumerative geometry via the moduli space of super Riemann surfaces,"In this paper we relate volumes of moduli spaces of super Riemann surfaces to
+integrals over the moduli space of stable Riemann surfaces $\overline{\cal
+M}_{g,n}$. This allows us to prove via algebraic geometry a recursion between
+the volumes of moduli spaces of super hyperbolic surfaces previously proven via
+super geometry techniques by Stanford and Witten. The recursion between the
+volumes of moduli spaces of super hyperbolic surfaces is proven to be
+equivalent to the fact that a generating function for the intersection numbers
+of a natural collection of cohomology classes $\Theta_{g,n}$ with tautological
+classes on $\overline{\cal M}_{g,n}$ is a KdV tau function. This is analogous
+to Mirzakhani's proof of the Kontsevich-Witten theorem regarding a generating
+function for the intersection numbers of tautological classes on
+$\overline{\cal M}_{g,n}$ using volumes of moduli spaces of hyperbolic
+surfaces.",Paul Norbury,"['AG', 'GT', 'MP']",enumerative geometry via the moduli space of super riemann surfacesin this paper we relate volumes of moduli spaces of super riemann surfaces to integrals over the moduli space of stable riemann surfaces  this allows us to prove via algebraic geometry a recursion between the volumes of moduli spaces of super hyperbolic surfaces previously proven via super geometry techniques by stanford and witten the recursion between the volumes of moduli spaces of super hyperbolic surfaces is proven to be equivalent to the fact that a generating function for the intersection numbers of a natural collection of cohomology classes with tautological classes on is a kdv tau function this is analogous to mirzakhanis proof of the kontsevich witten theorem regarding a generating function for the intersection numbers of tautological classes on using volumes of moduli spaces of hyperbolic surfaces
+45,Resolvent bounds for Lipschitz potentials in dimension two and higher with singularities at the origin,"We consider, for $h,E>0$, the semiclassical Schr\""odinger operator
+$-h^2\Delta + V - E$ in dimension two and higher. The potential $V$, and its
+radial derivative $\dell_{r}V$ are bounded away from the origin, have
+long-range decay and $V$ is bounded by $r^{-\delta}$ near the origin while
+$\dell_{r}V$ is bounded by $r^{-1-\delta}$, where $0\leq\delta\leq
+4(\sqrt{2}-1)$. In this setting, we show that the resolvent bound is
+exponential in $h^{-1}$, while the exterior resolvent bound is linear in
+$h^{-1}$.",Donnell Obovu,['AP'],resolvent bounds for lipschitz potentials in dimension two and higher with singularities at the originwe consider for  the semiclassical schrodinger operator in dimension two and higher the potential  and its radial derivative are bounded away from the origin have long range decay and is bounded by near the origin while is bounded by  where  in this setting we show that the resolvent bound is exponential in  while the exterior resolvent bound is linear in 
+46,The Zero Viscosity Limit of Stochastic Navier-Stokes Flows,"We introduce an analogue to Kato's Criterion regarding the inviscid
+convergence of stochastic Navier-Stokes flows to the strong solution of the
+deterministic Euler equation. Our assumptions cover additive, multiplicative
+and transport type noise models. This is achieved firstly for the typical noise
+scaling of $\nu^\frac{1}{2}$, before considering a new parameter which
+approaches zero with viscosity but at a potentially different rate. We
+determine the implications of this for our criterion and clarify a sense in
+which the scaling by $\nu^\frac{1}{2}$ is optimal. To enable the analysis we
+prove the existence of probabilistically weak, analytically weak solutions to a
+general stochastic Navier-Stokes Equation on a bounded domain with no-slip
+boundary condition in three spatial dimensions, as well as the existence and
+uniqueness of probabilistically strong, analytically weak solutions in two
+dimensions. The criterion applies for these solutions in both two and three
+dimensions, with some technical simplifications in the 2D case.","Daniel Goodair,Dan Crisan","['AP,MP']",the zero viscosity limit of stochastic navier stokes flowswe introduce an analogue to katos criterion regarding the inviscid convergence of stochastic navier stokes flows to the strong solution of the deterministic euler equation our assumptions cover additive multiplicative and transport type noise models this is achieved firstly for the typical noise scaling of  before considering a new parameter which approaches zero with viscosity but at a potentially different rate we determine the implications of this for our criterion and clarify a sense in which the scaling by is optimal to enable the analysis we prove the existence of probabilistically weak analytically weak solutions to a general stochastic navier stokes equation on a bounded domain with no slip boundary condition in three spatial dimensions as well as the existence and uniqueness of probabilistically strong analytically weak solutions in two dimensions the criterion applies for these solutions in both two and three dimensions with some technical simplifications in the d case
+47,It begins with a boundary: A geometric view on probabilistically robust learning,"Although deep neural networks have achieved super-human performance on many
+classification tasks, they often exhibit a worrying lack of robustness towards
+adversarially generated examples. Thus, considerable effort has been invested
+into reformulating Empirical Risk Minimization (ERM) into an adversarially
+robust framework. Recently, attention has shifted towards approaches which
+interpolate between the robustness offered by adversarial training and the
+higher clean accuracy and faster training times of ERM. In this paper, we take
+a fresh and geometric view on one such method -- Probabilistically Robust
+Learning (PRL) (Robey et al., ICML, 2022). We propose a geometric framework for
+understanding PRL, which allows us to identify a subtle flaw in its original
+formulation and to introduce a family of probabilistic nonlocal perimeter
+functionals to address this. We prove existence of solutions using novel
+relaxation methods and study properties as well as local limits of the
+introduced perimeters.","Leon Bungert,Nicolás García Trillos,Matt Jacobs,Daniel McKenzie,Đorđe Nikolić,Qingsong Wang","['AP', 'OC', 'ST']",it begins with a boundary a geometric view on probabilistically robust learningalthough deep neural networks have achieved super human performance on many classification tasks they often exhibit a worrying lack of robustness towards adversarially generated examples thus considerable effort has been invested into reformulating empirical risk minimization erm into an adversarially robust framework recently attention has shifted towards approaches which interpolate between the robustness offered by adversarial training and the higher clean accuracy and faster training times of erm in this paper we take a fresh and geometric view on one such method probabilistically robust learning prl robey et al icml  we propose a geometric framework for understanding prl which allows us to identify a subtle flaw in its original formulation and to introduce a family of probabilistic nonlocal perimeter functionals to address this we prove existence of solutions using novel relaxation methods and study properties as well as local limits of the introduced perimeters
+48,Hamilton-Jacobi scaling limits of Pareto peeling in 2D,"Pareto hull peeling is a discrete algorithm, generalizing convex hull
+peeling, for sorting points in Euclidean space. We prove that Pareto peeling of
+a random point set in two dimensions has a scaling limit described by a
+first-order Hamilton-Jacobi equation and give an explicit formula for the
+limiting Hamiltonian, which is both non-coercive and non-convex. This contrasts
+with convex peeling, which converges to curvature flow. The proof involves
+direct geometric manipulations in the same spirit as Calder (2016).","Ahmed Bou-Rabee,Peter S. Morfe",['AP'],hamilton jacobi scaling limits of pareto peeling in dpareto hull peeling is a discrete algorithm generalizing convex hull peeling for sorting points in euclidean space we prove that pareto peeling of a random point set in two dimensions has a scaling limit described by a first order hamilton jacobi equation and give an explicit formula for the limiting hamiltonian which is both non coercive and non convex this contrasts with convex peeling which converges to curvature flow the proof involves direct geometric manipulations in the same spirit as calder 
+49,Local well-posedness of the higher order nonlinear Schrödinger equation on the half-line: single boundary condition case,"We establish local well-posedness for the higher-order nonlinear
+Schr\""odinger equation, formulated on the half-line. We consider the scenario
+of associated coefficients such that only one boundary condition is required,
+which is assumed to be Dirichlet type. Our functional framework centers around
+fractional Sobolev spaces. We treat both high regularity and low regularity
+solutions: in the former setting, the relevant nonlinearity can be handled via
+the Banach algebra property; in the latter setting, however, delicate
+Strichartz estimates must be established. This task is especially challenging
+in the framework of nonhomogeneous initial-boundary value problems, as it
+involves proving boundary-type Strichartz estimates that are not common in the
+study of initial value problems.
+  The linear analysis, which is the core of this work, crucially relies on a
+weak solution formulation defined through the novel solution formulae obtained
+via the Fokas method. In this connection, we note that the higher-order
+Schr\""odinger equation comes with an increased level of difficulty due to the
+presence of more than one spatial derivative. This feature manifests itself via
+several complications throughout the analysis, including (i) analyticity issues
+related to complex square roots, which require careful treatment of branch cuts
+and deformations of integration contours; (ii) singularities that emerge upon
+changes of variables in the Fourier analysis arguments; (iii) complicated
+oscillatory kernels in the weak solution formula for the linear
+initial-boundary value problem, which require a subtle analysis of the
+dispersion in terms of the regularity of the boundary data. The present work
+provides a first, complete treatment via the Fokas method of a nonhomogeneous
+initial-boundary value problem for a partial differential equation associated
+with a multi-term linear differential operator.","Aykut Alkın,Dionyssios Mantzavinos,Türker Özsarı",['AP'],local well posedness of the higher order nonlinear schroedinger equation on the half line single boundary condition casewe establish local well posedness for the higher order nonlinear schrodinger equation formulated on the half line we consider the scenario of associated coefficients such that only one boundary condition is required which is assumed to be dirichlet type our functional framework centers around fractional sobolev spaces we treat both high regularity and low regularity solutions in the former setting the relevant nonlinearity can be handled via the banach algebra property in the latter setting however delicate strichartz estimates must be established this task is especially challenging in the framework of nonhomogeneous initial boundary value problems as it involves proving boundary type strichartz estimates that are not common in the study of initial value problems the linear analysis which is the core of this work crucially relies on a weak solution formulation defined through the novel solution formulae obtained via the fokas method in this connection we note that the higher order schrodinger equation comes with an increased level of difficulty due to the presence of more than one spatial derivative this feature manifests itself via several complications throughout the analysis including i analyticity issues related to complex square roots which require careful treatment of branch cuts and deformations of integration contours ii singularities that emerge upon changes of variables in the fourier analysis arguments iii complicated oscillatory kernels in the weak solution formula for the linear initial boundary value problem which require a subtle analysis of the dispersion in terms of the regularity of the boundary data the present work provides a first complete treatment via the fokas method of a nonhomogeneous initial boundary value problem for a partial differential equation associated with a multi term linear differential operator
