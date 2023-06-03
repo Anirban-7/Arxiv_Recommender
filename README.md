@@ -43,8 +43,13 @@ We used a pre-trained Word2Vec model and also trained two of our own Doc2Vec mod
 We then tested our models on articles familiar to the contributers of this Github repository. The inputs to our recommendation algorithms are one or more arXiv ids of papers the user is interested in. The user then requests the number of recommendations they would like to see. 
 
 We use two approaches to recommend articles:
-    - 1. in ver1 (link to notebook)
-    - 2. in ver2 (link to notebook)
+    - 1. [word2vec-doc2vec-ver1.ipynb] 
+        -- For each tokenized abstract we compute the cosine similarities with all of the elements in the dataset add them to a new dataset.
+        -- Sort the rows in the dataset created in part (1) from highest to lowest by cosine similarity. 
+        -- Remove all duplicate articles from the dataset keeping only the ones with the largest cosine similarity. Return the first $`n'$ articles in the dataset.
+    - 2. [word2vec-doc2vec-ver2.ipynb] 
+        -- Merge the tokens of the all abstracts the user inputs into one merged abstract.
+        -- Return the $`n`$ articles with the highest cosine similarity with the merged abstract in the dataset.
     
 ### Analysis of Models
 ---------------------------------
