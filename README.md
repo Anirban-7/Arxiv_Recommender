@@ -54,10 +54,10 @@ We will be primarily interested in `UMAP` hyperparameters `n_neighbors` and `n_c
 In our investigation, we experimented with n_neighbors values of 5, 15, and 50, and n_components values of 2, 5, and 10. The images below visualize the document clusters in the training set, labeled by distinct colors to represent different topic clusters.
 
 n_neighbors = 5, n_components = 2
-<img src="images/visualize_topics-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
+<img src="images/visualize_documents-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
 
 n_neighbors = 5, n_components = 10
-<img src="images/visualize_topics-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
+<img src="images/visualize_documents-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
 
 We observed a trend: increasing n_neighbors and n_components values enlarges the uncolored region, representing outliers - an outcome we aim to avoid. The provided images are illustrative of the extreme cases.
 
