@@ -1,17 +1,17 @@
 # Arxiv Recommender
 ----------
 
-This project is part of Erdos 2023 bootcamp.
+This project is part of Erdos Institute 2023 Data Science Bootcamp.
 
 ## Table of Contents
 --------------------------------
 - [Data Description](#data-description)
     - [filter_20k.parquet](#filter_20k.parquet)
-- [Using Word2Vec and Doc2Vec to Recommend Articles] (#Using-Word2Vec-and-Doc2Vec-to-Recommend-Articles)
-    - [Analysis of Models]
+- [Using Word2Vec and Doc2Vec to Recommend Articles](#Using-Word2Vec-and-Doc2Vec-to-Recommend-Articles)
+    - [Analysis of Models](#Analysis-of-Models)
 - [One-Step Topic Analysis using BERTopic](#One-Step-Topic-Analysis-Using-BERTopic)
     - [UMAP hyperparameter tuning](#UMAP-hyperparameter-tuning)
-    - [reducing the number of topics and outliers](#reducing-the-number-of-topics-and-outliers)
+    - [Reducing the number of topics and outliers](#Reducing-the-number-of-topics-and-outliers)
 - [Dashboard](#dashboard)
  
 
@@ -40,22 +40,23 @@ Word2Vec is an algorithm which computes a feature vector for every word in the c
 
 We used a pre-trained Word2Vec model and also trained two of our own Doc2Vec models: one using distributed bag of words and the other using distributed memory. The difference between the distributed bag of words and the distributed memory model is that the distributed memory model approximates the word using the context of surrounding words and the distributed bag of words model uses the target word to approximate the context of the word.
 
-We then tested our models on articles familiar to the contributers of this Github repository. The inputs to our recommendation algorithms are one or more arXiv ids of papers the user is interested in. The user then requests the number of recommendations they would like to see. 
+We then tested our models on articles familiar to the contributers of this Github repository. The inputs to our recommendation algorithms are one or more arXiv ids of papers pertaining to the user's interests. The user then requests the number of recommendations they would like to receive. 
 
 We use two approaches to recommend articles:
 
-    - 1. [word2vec-doc2vec-ver1.ipynb] 
-        -- For each tokenized abstract we compute the cosine similarities with all of the elements in the dataset add them to a new dataset.
-        -- Sort the rows in the dataset created in part (1) from highest to lowest by cosine similarity. 
-        -- Remove all duplicate articles from the dataset keeping only the ones with the largest cosine similarity. Return the first $n$ articles in the dataset.
-        
-    - 2. [word2vec-doc2vec-ver2.ipynb] 
-        -- Merge the tokens of the all abstracts the user inputs into one merged abstract.
-        -- Return the $n$ articles with the highest cosine similarity with the merged abstract in the dataset.
+- 1. [word2vec-doc2vec-ver1.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver1.ipynb)
+     - For each tokenized abstract we compute the cosine similarities with all of the elements in the dataset add them to a new dataset.
+     - Sort the rows in the dataset created in part (1) from highest to lowest by cosine similarity. 
+     - Remove all duplicate articles from the dataset keeping only the ones with the largest cosine similarity. Return the first $n$ articles in the dataset.
+- 2. [word2vec-doc2vec-ver2.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver2.ipynb) 
+      - Merge the tokens of the all abstracts the user inputs into one merged abstract.
+      - Return the $n$ articles with the highest cosine similarity with the merged abstract in the dataset.
     
 ### Analysis of Models
 ---------------------------------
+Our testing of the three models involved inputting three arXiv ids generating the 10 most similar papers from our dataset of 20,000 papers. The input size of 3 was chosen primarily due to limiting computation time. 
 
+The contributers' individual rankings of the three models can be found at the bottom of the aforementioned notebooks. A general trend is that Doc2Vec with distributed memory outperforms Doc2Vec with bag of words. However, opinions on the performance of Word2Vec relative to the Doc2Vec models vary.
 
 
 ## One-Step Topic Analysis using BERTopic
@@ -97,7 +98,7 @@ For instance, the model configured with `n_neighbors = 5` categorized the paper 
 After careful consideration, we determined `n_neighbors = 5` and `n_components = 5` as the optimal hyperparameters for our task.
 
 
-### reducing the number of topics and outliers
+### Reducing the number of topics and outliers
 ------------------------------
 We now turn to the built-in BERTopic methods, `reduce_topics` and `reduce_outliers`. Invoking these methods indirectly fine-tunes the hyperparameters of HDBScan, namely `min_cluster_size` and `min_samples`. 
 - `min_cluster_size` : the smallest size grouping that you wish to consider a cluster.
