@@ -56,8 +56,8 @@ In our investigation, we experimented with n_neighbors values of 5, 15, and 50, 
 n_neighbors = 5, n_components = 2
 <img src="images/visualize_documents-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
 
-n_neighbors = 5, n_components = 10
-<img src="images/visualize_documents-5-2.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
+n_neighbors = 50, n_components = 10
+<img src="images/visualize_documents-50-10.png" alt="n_neighbors = 5, n_components = 2" width="800"/>
 
 We observed a trend: increasing n_neighbors and n_components values enlarges the uncolored region, representing outliers - an outcome we aim to avoid. The provided images are illustrative of the extreme cases.
 
