@@ -303,7 +303,7 @@ def OHE_cats(df):
     the same index as the library
     """
     mlb = MultiLabelBinarizer()
-    category_map = category_map()
+    categories = category_map()
 
     def convert_to_eng(cat_array):
         return [category_map['math.' + tag] for tag in cat_array]
