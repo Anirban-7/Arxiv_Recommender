@@ -63,7 +63,7 @@ We observed a trend: increasing n_neighbors and n_components values enlarges the
 
 Interestingly, BERTopic models with lower n_neighbors and n_components tend to classify a smaller ratio of papers as outliers. However, we need to be cautious to not set these values too low. As the dimensionality (n_components) of the reduced space decreases, the model tends to conglomerate papers with others that may not be thematically similar. This overconfidence occasionally results in the model assigning papers to less relevant topics.
 
-For instance, the model configured with n_neighbors = 5 categorized the paper arXiv:2305.16270 as a paper on random graphs. While the paper does indeed discuss a combinatorial object of a random nature, it primarily pertains to homotopy theory. Given the relatively limited number of algebraic topology papers in our corpus, it might have been more accurate for the model to classify it as an outlier, rather than forcing an ill-fitting assignment to the random graph topic.
+For instance, the model configured with n_neighbors = 5 categorized the paper [arXiv:2305.16270](https://arxiv.org/abs/2305.16270) as a paper on random graphs. While the paper does indeed discuss a combinatorial object of a random nature, it primarily pertains to homotopy theory. Given the relatively limited number of algebraic topology papers in our corpus, it might have been more accurate for the model to classify it as an outlier, rather than forcing an ill-fitting assignment to the random graph topic.
 
 After careful consideration, we determined n_neighbors = 5 and n_components = 5 as the optimal hyperparameters for our task.
 
