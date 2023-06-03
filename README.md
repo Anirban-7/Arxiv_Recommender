@@ -44,11 +44,11 @@ We then tested our models on articles familiar to the contributers of this Githu
 
 We use two approaches to recommend articles:
 
--(1) [word2vec-doc2vec-ver1.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver1.ipynb)
+- (1) [word2vec-doc2vec-ver1.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver1.ipynb)
      - For each tokenized abstract we compute the cosine similarities with all of the elements in the dataset add them to a new dataset.
      - Sort the rows in the dataset created in part (1) from highest to lowest by cosine similarity. 
      - Remove all duplicate articles from the dataset keeping only the ones with the largest cosine similarity. Return the first $n$ articles in the dataset.
--(2) [word2vec-doc2vec-ver2.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver2.ipynb) 
+- (2) [word2vec-doc2vec-ver2.ipynb](https://github.com/Anirban-7/Arxiv_Recommender/blob/main/word2vec-doc2vec-ver2.ipynb) 
       - Merge the tokens of the all abstracts the user inputs into one merged abstract.
       - Return the $n$ articles with the highest cosine similarity with the merged abstract in the dataset.
     
