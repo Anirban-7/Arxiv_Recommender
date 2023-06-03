@@ -86,6 +86,13 @@ This does not happen when we only apply reduce_outliers to the BERTopic model as
 
 Thus, we conclude that the BERTopic model with n_neighbors = 5, n_components = 5, and with reduce_outliers applied, best suits our needs.
 
+### Dashboard
+-----------------------------------
+The app takes a single arxiv id as input and returns five similar papers as recommendations based on a semantic search applied to the title and abstract. 
+The topic clusters corresponding to the best model are stored for each paper in our database. We keep only the unique topic clusters for each paper and run a semantic search on the topic labels for the five similar papers. We display only the top 5 related topics.
+
+<img src="images/Recommender-screenshot" width="800"/>
+
 
 ```python
 
