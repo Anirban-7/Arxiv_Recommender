@@ -7,6 +7,8 @@ This project is part of Erdos 2023 bootcamp.
 --------------------------------
 - [Data Description](#data-description)
     - [filter_20k.parquet](#filter_20k.parquet)
+- [Using Word2Vec and Doc2Vec to Recommend Articles] (#Using-Word2Vec-and-Doc2Vec-to-Recommend-Articles)
+    - [Analysis of Models]
 - [One-Step Topic Analysis using BERTopic](#One-Step-Topic-Analysis-Using-BERTopic)
     - [UMAP hyperparameter tuning](#UMAP-hyperparameter-tuning)
     - [reducing the number of topics and outliers](#reducing-the-number-of-topics-and-outliers)
@@ -30,6 +32,24 @@ It contains many columns but we will primarily be interested in:
 
 - `title`: the title of the arxiv paper. String.
 - `abstract`: the abstract summary of the arxiv paper. String.
+
+## Using Word2Vec and Doc2Vec to Recommend Articles
+---------------------------------
+
+Word2Vec is an algorithm which computes a feature vector for every word in the corpus, wheras Doc2Vec computes a feature vector for every document in the corpus.
+
+We used a pre-trained Word2Vec model and also trained two of our own Doc2Vec models: one using distributed bag of words and the other using distributed memory. The difference between the distributed bag of words and the distributed memory model is that the distributed memory model approximates the word using the context of surrounding words and the distributed bag of words model uses the target word to approximate the context of the word.
+
+We then tested our models on articles familiar to the contributers of this Github repository. The inputs to our recommendation algorithms are one or more arXiv ids of papers the user is interested in. The user then requests the number of recommendations they would like to see. 
+
+We use two approaches to recommend articles:
+    - 1. in ver1 (link to notebook)
+    - 2. in ver2 (link to notebook)
+    
+### Analysis of Models
+---------------------------------
+
+
 
 ## One-Step Topic Analysis using BERTopic
 ---------------------------------
