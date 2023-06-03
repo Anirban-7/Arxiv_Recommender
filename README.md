@@ -10,6 +10,8 @@ This project is part of Erdos 2023 bootcamp.
 - [One-Step Topic Analysis using BERTopic](#One-Step-Topic-Analysis-Using-BERTopic)
     - [UMAP hyperparameter tuning](#UMAP-hyperparameter-tuning)
     - [reducing the number of topics and outliers](#reducing-the-number-of-topics-and-outliers)
+- [Dashboard](#dashboard)
+ 
 
 
 ### Data Description
@@ -91,7 +93,7 @@ Thus, we conclude that the BERTopic model with n_neighbors = 5, n_components = 5
 The app takes a single arxiv id as input and returns five similar papers as recommendations based on a semantic search applied to the title and abstract. 
 The topic clusters corresponding to the best model are stored for each paper in our database. We keep only the unique topic clusters for each paper and run a semantic search on the topic labels for the five similar papers. We display only the top 5 related topics.
 
-<img src="images/Recommender-screenshot" alt="" width="800"/>
+<img src="images/Recommender-screenshot.png" alt="" width="800"/>
 
 
 ```python
